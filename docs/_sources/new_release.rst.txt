@@ -1,0 +1,12 @@
+.. _new_release:
+
+New Release
+=================
+
+New API features in FEFLOW 7.4
+------------------------------
+.. toctree::
+
+   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/FEFLOW74_NewFeatures_Ifm.ipynb
+   
+

@@ -1,0 +1,11 @@
+.. _benchmarks:
+
+Benchmarks
+=================
+
+Benchmarks
+----------------------
+.. toctree::
+
+   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+

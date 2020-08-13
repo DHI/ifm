@@ -1,0 +1,59 @@
+.. _api:
+
+
+IFM API Documentation
+=====================
+
+ifm (Kernel Methods)
+--------------------
+.. autoclass:: ifm.ifm
+	:members:
+	
+ifm.FeflowDoc (FEFLOW Model)
+----------------------------
+.. autoclass:: ifm.FeflowDoc
+	:members:
+
+ifm.MLWInfo
+-----------
+.. autoclass:: ifm.MLWInfo
+	:members:
+
+ifm.ParticleTracer
+------------------
+.. autoclass:: ifm.ParticleTracer
+	:members:
+
+ifm.Budget
+----------
+.. autoclass:: ifm.Budget
+	:members:
+
+ifm.NodalBudget
+---------------
+.. autoclass:: ifm.NodalBudget
+	:members:
+
+ifm.BudgetResultEx
+------------------
+.. autoclass:: ifm.BudgetResultEx
+	:members:
+
+ifm.SubdomainBudget
+-------------------
+.. autoclass:: ifm.SubdomainBudget
+	:members:
+
+ifm.SubdomainTransferBudget
+---------------------------
+.. autoclass:: ifm.SubdomainTransferBudget
+	:members:
+
+
+Callbacks
+=========
+	
+Callbacks
+--------------
+.. autoclass:: ifm.callbacks
+	:members:

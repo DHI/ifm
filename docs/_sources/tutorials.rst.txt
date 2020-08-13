@@ -1,0 +1,17 @@
+.. _tutorials:
+
+Tutorials
+=================
+
+Programming in IFM
+----------------------
+.. toctree::
+
+   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+
+Working with FEFLOW
+----------------------------
+.. toctree::
+
+   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+	
