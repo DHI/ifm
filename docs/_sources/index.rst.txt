@@ -1,0 +1,45 @@
+.. ifm documentation master file, created by
+   sphinx-quickstart on Thu Jul 23 20:45:55 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+ifm: Python API for FEFLOW Groundwater Modelling System
+=======================================================
+
+Programming Interface for the FEFLOW Grundwater Modelling System
+
+Requirements
+------------
+
+* Python >= 3.5
+* FEFLOW 7.4
+
+Installation
+------------
+
+    ifm is installed with FEFLOW.
+
+Getting started
+---------------
+    
+    >>>  import ifm
+    >>>  doc = ifm.loadDocument("myModel.fem")
+    >>>  
+
+.. toctree::
+   :maxdepth: 2
+
+   api
+   tutorials
+   new_release
+   benchmarks
+
+   :caption: Contents:
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
