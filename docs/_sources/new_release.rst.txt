@@ -5,8 +5,12 @@ New Release
 
 New API features in FEFLOW 7.4
 ------------------------------
-.. toctree::
 
-   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/FEFLOW74_NewFeatures_Ifm.ipynb
-   
+* Improved vectorized access to model parameters
+* better control of the simulation engine
+* setting history charting for selections
+* particle tracking
 
+See this tutorial for a thorough introduction:
+
+https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/FEFLOW74_NewFeatures_Ifm.ipynb

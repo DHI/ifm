@@ -3,15 +3,13 @@
 Tutorials
 =================
 
-Programming in IFM
+Programming with IFM
 ----------------------
-.. toctree::
 
-   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+	**Introduction to ifm_contrib**
+	
+	This tutorial is an introduction for programming with the open source extension ifm_contrib:
+	https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
 
-Working with FEFLOW
-----------------------------
-.. toctree::
 
-   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
 	

@@ -3,9 +3,12 @@
 Benchmarks
 =================
 
-Benchmarks
+Heat Transport
 ----------------------
 .. toctree::
 
-   https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+**Domenico and Palciauskas (1973)**
 
+This is a benchmark to verify FEFLOWs ability to solve advective-dispersive-conductive heat transport models:
+
+https://github.com/DHI/ifm/blob/master/benchmarks/domenico_palciauskas/domenico_palciauskas.ipynb
