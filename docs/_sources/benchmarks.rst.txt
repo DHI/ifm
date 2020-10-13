@@ -12,3 +12,8 @@ Heat Transport
 This is a benchmark to verify FEFLOWs ability to solve advective-dispersive-conductive heat transport models:
 
 https://github.com/DHI/ifm/blob/master/benchmarks/domenico_palciauskas/domenico_palciauskas.ipynb
+
+We will add more benchmarks over time.
+
+Do you have a numeric benchmark you want us to publish here? 
+Please don't hesitate to contact us at mike.de@dhigroup.com!
