@@ -13,4 +13,4 @@ New API features in FEFLOW 7.4
 
 See this tutorial for a thorough introduction:
 
-https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/FEFLOW74_NewFeatures_Ifm.ipynb
+https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb
