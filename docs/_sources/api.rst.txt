@@ -49,6 +49,12 @@ ifm.SubdomainTransferBudget
 .. autoclass:: ifm.SubdomainTransferBudget
 	:members:
 
+ifm.Parameter
+---------------------------
+.. autoclass:: ifm.Parameter
+	:members:
+
+
 
 Callbacks
 =========

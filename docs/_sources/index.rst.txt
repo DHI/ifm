@@ -17,14 +17,54 @@ Requirements
 Installation
 ------------
 
-    ifm is installed with FEFLOW.
+    The ifm API is automatically installed with FEFLOW (Python API option must be selected).
+
 
 Getting started
 ---------------
-    
+
+There are multiple ways to use the IFM API of FEFLOW.
+
+* import ifm as a package in a Python script.
+* use the `-python` option when calling FEFLOW from the command line
+* inject Python code into a FEFLOW model that is executed during model run time (:ref:`Callbacks`)
+
+The most common way is to import ifm as a package in a Python script. This is usually the preferred way during pre- and postprocessing.
+
+    >>>  # open a model and read the number of nodes
     >>>  import ifm
     >>>  doc = ifm.loadDocument("myModel.fem")
-    >>>  
+    >>>  print(doc.getNumberOfNodes())
+
+    126
+
+The package resides in the C:\Program Files\DHI\2020\FEFLOW 7.4\python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+Therefore, the example above should work out of the box.
+
+Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is . 
+Use `ifm.getKernelVersion()` to make sure the desired FEFLOW version has been loaded.
+
+Inline Python Skripts
+---------------------
+
+FEFLOW Python scripting capabilities are activated via Global Settings options from the  Tools menu. 
+The option  Enable Scripting is part of the section Tool Properties. Once this scripting option has been activated,
+FEFLOW will remember the user-defined setting and provide access to the  Scripting menu.
+
+The operation in the  Scripting menu differs slightly to an external Python interpreter or Python Shell outside FEFLOW. 
+The import of the ifm module is not required. The document variable, typically referred as doc, is automatically initialized 
+and referred to the current document instance (either FEM file or DAC file) loaded in the FEFLOW Graphical Interface.
+
+Table below shows an example about the operation differences between an external Python interpreter and the  Scripting menu. 
+The simple example just print the total number of nodes in the finite-element mesh.
+
+http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html
+
+
+* Note: The in-built Python interpreter has standard libs only. 
+  Non standard-librarys can be imported from a separate environment. Experience showed that installations from python.org is more stable than conda-environments.
+
+Depreciation notice: Future versions of FEFLOW may require an external Python runtime instead of using the in-built environments.
 
 .. toctree::
    :maxdepth: 2

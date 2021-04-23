@@ -169,15 +169,47 @@
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>ifm is installed with FEFLOW.</div></blockquote>
+<div>The ifm API is automatically installed with FEFLOW (Python API option must be selected).</div></blockquote>
 </div>
 <div class="section" id="getting-started">
 <h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="kn">import</span> <span class="nn">ifm</span>
+<p>There are multiple ways to use the IFM API of FEFLOW.</p>
+<ul class="simple">
+<li>import ifm as a package in a Python script.</li>
+<li>use the <cite>-python</cite> option when calling FEFLOW from the command line</li>
+<li>inject Python code into a FEFLOW model that is executed during model run time (<span class="xref std std-ref">Callbacks</span>)</li>
+</ul>
+<p>The most common way is to import ifm as a package in a Python script. This is usually the preferred way during pre- and postprocessing.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="c1"># open a model and read the number of nodes</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="kn">import</span> <span class="nn">ifm</span>
 <span class="gp">&gt;&gt;&gt; </span> <span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">loadDocument</span><span class="p">(</span><span class="s2">&quot;myModel.fem&quot;</span><span class="p">)</span>
-<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">getNumberOfNodes</span><span class="p">())</span>
 </pre></div>
 </div>
+<p>126</p>
+</div></blockquote>
+<p>The package resides in the C:Program FilesDHI2020FEFLOW 7.4python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+Therefore, the example above should work out of the box.</p>
+<p>Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is .
+Use <cite>ifm.getKernelVersion()</cite> to make sure the desired FEFLOW version has been loaded.</p>
+</div>
+<div class="section" id="inline-python-skripts">
+<h2>Inline Python Skripts<a class="headerlink" href="#inline-python-skripts" title="Permalink to this headline">¶</a></h2>
+<p>FEFLOW Python scripting capabilities are activated via Global Settings options from the  Tools menu.
+The option  Enable Scripting is part of the section Tool Properties. Once this scripting option has been activated,
+FEFLOW will remember the user-defined setting and provide access to the  Scripting menu.</p>
+<p>The operation in the  Scripting menu differs slightly to an external Python interpreter or Python Shell outside FEFLOW.
+The import of the ifm module is not required. The document variable, typically referred as doc, is automatically initialized
+and referred to the current document instance (either FEM file or DAC file) loaded in the FEFLOW Graphical Interface.</p>
+<p>Table below shows an example about the operation differences between an external Python interpreter and the  Scripting menu.
+The simple example just print the total number of nodes in the finite-element mesh.</p>
+<p><a class="reference external" href="http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html">http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html</a></p>
+<ul class="simple">
+<li>Note: The in-built Python interpreter has standard libs only.
+Non standard-librarys can be imported from a separate environment. Experience showed that installations from python.org is more stable than conda-environments.</li>
+</ul>
+<p>Depreciation notice: Future versions of FEFLOW may require an external Python runtime instead of using the in-built environments.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">IFM API Documentation</a><ul>
@@ -190,6 +222,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api.html#ifm-budgetresultex">ifm.BudgetResultEx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#ifm-subdomainbudget">ifm.SubdomainBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#ifm-subdomaintransferbudget">ifm.SubdomainTransferBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#ifm-parameter">ifm.Parameter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html#callbacks">Callbacks</a><ul>
