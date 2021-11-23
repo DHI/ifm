@@ -1,0 +1,7 @@
+IFM FEFLOW Model Class
+======================
+
+ifm.FeflowDoc
+----------------------------
+.. autoclass:: ifm.FeflowDoc
+	:members:
