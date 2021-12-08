@@ -1,0 +1,7 @@
+.. _callbacks:
+
+Callbacks
+=========
+
+.. autoclass:: ifm.callbacks
+	:members:

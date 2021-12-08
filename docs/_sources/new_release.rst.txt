@@ -1,16 +1,34 @@
 .. _new_release:
 
-New Release
-=================
+New Features / Version History
+==============================
 
-New API features in FEFLOW 7.4
+
+New API features in FEFLOW 7.5
 ------------------------------
 
-* Improved vectorized access to model parameters
-* better control of the simulation engine
-* setting history charting for selections
-* particle tracking
+* Access to the Lookup Table
+* Setting solver type
+* Setting Number of threads for parallel computation
 
-See this tutorial for a thorough introduction:
+See the tutorial for an introduction to new feautures:
+
+https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7500.ipynb
+
+
+New API features in FEFLOW 7.4
+-------------------------------------
+
+* Improved vectorized access to model parameters
+* Better control of the simulation engine
+* Setting history charting for selections
+* Particle tracking
+
+Tutorial showcasing features introduced with FEFLOW 7.4:
 
 https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb
+
+Legacy Help - FEFLOW 7.4:
+
+https://dhi.github.io/ifm/legacy/7.4/
+

@@ -11,8 +11,8 @@ Programming Interface for the FEFLOW Grundwater Modelling System
 Requirements
 ------------
 
-* Python >= 3.5
-* FEFLOW 7.4
+* Python >= 3.6
+* FEFLOW 7.5
 
 Installation
 ------------
@@ -38,7 +38,7 @@ The most common way is to import ifm as a package in a Python script. This is us
 
     126
 
-The package resides in the C:\Program Files\DHI\2020\FEFLOW 7.4\python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+The package resides in the C:\Program Files\DHI\2021\FEFLOW 7.5\python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.
 
 Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is . 
@@ -69,13 +69,13 @@ Depreciation notice: Future versions of FEFLOW may require an external Python ru
 .. toctree::
    :maxdepth: 2
 
-   api
+   api_kernel
+   api_doc
+   api_objects
+   api_callbacks
    tutorials
-   new_release
    benchmarks
-
-   :caption: Contents:
-
+   new_release
 
 Indices and tables
 ==================
