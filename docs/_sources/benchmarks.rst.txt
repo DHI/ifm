@@ -37,6 +37,14 @@ even if using the convective form of transport.
 
 https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb
 
+
+Evaluating performances for different threads and solvers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This scripts evaluates the computational performance of a given model for different number of threads and solver types.
+
+https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb
+
 FEFLOW benchmarks
 -----------------
 
