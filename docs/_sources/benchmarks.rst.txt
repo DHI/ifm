@@ -43,7 +43,7 @@ Evaluating performances for different threads and solvers
 
 This scripts evaluates the computational performance of a given model for different number of threads and solver types.
 
-https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb
+https://github.com/DHI/ifm/blob/master/examples/set-threads-solver-measure-runtime.ipynb
 
 FEFLOW benchmarks
 -----------------
