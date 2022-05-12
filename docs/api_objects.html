@@ -1129,7 +1129,7 @@ Returns <cite>None</cite> if track is empty.</p>
 <dd class="field-odd"><p>pathline tracking direction</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>{<cite>Enum.PT_FORWARD</cite>, <cite>Enum.PT_BACKWARD</cite>}</p>
+<dd class="field-even"><p>{<cite>Enum.PT_DIR_FORWARD</cite>, <cite>Enum.PT_DIR_BACKWARD</cite>}</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1143,7 +1143,7 @@ Returns <cite>None</cite> if track is empty.</p>
 <dd class="field-odd"><p>pathline tracking mode</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>{<cite>Enum.PT_STEADY</cite>, <cite>Enum.PT_UNSTEADY</cite>}</p>
+<dd class="field-even"><p>{<cite>Enum.PT_MODE_STEADY</cite>, <cite>Enum.PT_MODE_UNSTEADY</cite>}</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1157,7 +1157,7 @@ Returns <cite>None</cite> if track is empty.</p>
 <dd class="field-odd"><p>pathline tracking type</p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>{<cite>Enum.PT_ADVECTIVE</cite>, <cite>Enum.PT_RW</cite>}</p>
+<dd class="field-even"><p>{<cite>Enum.PT_TYPE_ADVECTIVE</cite>, <cite>Enum.PT_TYPE_RW</cite>}</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1496,7 +1496,7 @@ For backward tracking, choose value greater than initial time.</p>
 <dd><p>Set pathline tracking direction</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>tracking_direction</strong> ({<cite>Enum.PT_FORWARD</cite>, <cite>Enum.PT_BACKWARD</cite>}) – The tracking direction to be set.</p>
+<dd class="field-odd"><p><strong>tracking_direction</strong> ({<cite>Enum.PT_DIR_FORWARD</cite>, <cite>Enum.PT_DIR_BACKWARD</cite>}) – The tracking direction to be set.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1507,8 +1507,8 @@ For backward tracking, choose value greater than initial time.</p>
 <dd><p>Set pathline tracking mode (steady = streamlines, unsteady = pathlines)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>tracking_mode</strong> ({<cite>Enum.PT_STEADY</cite>, <cite>Enum.PT_UNSTEADY</cite>}) – Tracking mode to be set. <cite>Enum.PT_STEADY</cite> enables calculation on a steady flow field at currently loaded time step, resulting in streamlines/random walks.
-<cite>Enum.PT_UNSTEADY</cite> enables calculation on the transient flow field, resulting in pathlines/random walks perids.</p>
+<dd class="field-odd"><p><strong>tracking_mode</strong> ({<cite>Enum.PT_MODE_STEADY</cite>, <cite>Enum.PT_MODE_UNSTEADY</cite>}) – Tracking mode to be set. <cite>Enum.PT_MODE_STEADY</cite> enables calculation on a steady flow field at currently loaded time step, resulting in streamlines/random walks.
+<cite>Enum.PT_MODE_UNSTEADY</cite> enables calculation on the transient flow field, resulting in pathlines/random walks perids.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1519,8 +1519,8 @@ For backward tracking, choose value greater than initial time.</p>
 <dd><p>Set pathline tracking type (advective = classic streamline/pathline computation; rw = Random Walk method)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>tracking_type</strong> ({<cite>Enum.PT_ADVECTIVE</cite>, <cite>Enum.PT_RW</cite>}) – Tracking type to be set. <cite>Enum.PT_ADVECTIVE</cite> sets classic streamline/pathline computation on purely advective flow field,
-<cite>Enum.PT_RW</cite> set the Random Walk method considering dispersive and diffusive effects.</p>
+<dd class="field-odd"><p><strong>tracking_type</strong> ({<cite>Enum.PT_TYPE_ADVECTIVE</cite>, <cite>Enum.PT_TYPE_RW</cite>}) – Tracking type to be set. <cite>Enum.PT_TYPE_ADVECTIVE</cite> sets classic streamline/pathline computation on purely advective flow field,
+<cite>Enum.PT_TYPE_RW</cite> set the Random Walk method considering dispersive and diffusive effects.</p>
 </dd>
 </dl>
 </dd></dl>
