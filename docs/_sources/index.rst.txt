@@ -12,7 +12,7 @@ Requirements
 ------------
 
 * Python >= 3.6
-* FEFLOW 7.5
+* FEFLOW 8.0
 
 Installation
 ------------

@@ -3,6 +3,11 @@
 New Features / Version History
 ==============================
 
+New API features in FEFLOW 8.0
+------------------------------
+
+FEFLOW 8.0 doesn't present new API functions.
+
 
 New API features in FEFLOW 7.5
 ------------------------------
@@ -28,7 +33,7 @@ Tutorial showcasing features introduced with FEFLOW 7.4:
 
 https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb
 
-Legacy Help - FEFLOW 7.4:
+Legacy Help - FEFLOW 7.5:
 
-https://dhi.github.io/ifm/legacy/7.4/
+https://dhi.github.io/ifm/legacy/7.5/
 
