@@ -1,0 +1,2214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFM Classes &mdash; ifm 7.500 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Callbacks" href="api_callbacks.html" />
+    <link rel="prev" title="IFM FEFLOW Model Class" href="api_doc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> ifm
+          </a>
+              <div class="version">
+                7.5
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api_kernel.html">IFM Kernel Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_doc.html">IFM FEFLOW Model Class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">IFM Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-budget">ifm.Budget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-budgetresultex">ifm.BudgetResultEx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-lookuptable">ifm.LookupTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-mlwinfo">ifm.MLWInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-nodalbudget">ifm.NodalBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-parameter">ifm.Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-particletracer">ifm.ParticleTracer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-subdomainbudget">ifm.SubdomainBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-subdomaintransferbudget">ifm.SubdomainTransferBudget</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_callbacks.html">Callbacks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="benchmarks.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_release.html">New Features / Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ifm</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>IFM Classes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/api_objects.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ifm-classes">
+<h1>IFM Classes<a class="headerlink" href="#ifm-classes" title="Permalink to this headline"></a></h1>
+<section id="ifm-budget">
+<h2>ifm.Budget<a class="headerlink" href="#ifm-budget" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.Budget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">Budget</span></span><a class="headerlink" href="#ifm.Budget" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="ifm-budgetresultex">
+<h2>ifm.BudgetResultEx<a class="headerlink" href="#ifm-budgetresultex" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.BudgetResultEx">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">BudgetResultEx</span></span><a class="headerlink" href="#ifm.BudgetResultEx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="ifm-lookuptable">
+<h2>ifm.LookupTable<a class="headerlink" href="#ifm-lookuptable" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.LookupTable">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">LookupTable</span></span><a class="headerlink" href="#ifm.LookupTable" title="Permalink to this definition"></a></dt>
+<dd><p>The LookupTable class provides access to the LookupTable of a FEFLOW model (fem or dac file).
+It can be obtained by calling the <cite>ifm.FeflowDoc.getLookupTable</cite> method.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.getLookupTable" title="ifm.FeflowDoc.getLookupTable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifm.FeflowDoc.getLookupTable</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getLookupTable</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.addMaterial">
+<span class="sig-name descname"><span class="pre">addMaterial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.addMaterial" title="Permalink to this definition"></a></dt>
+<dd><p>Adds a material (=row) to the Lookup Table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>material_name</strong> (<em>str</em>) – the name of the material</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The material_id of the material created.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">addMaterial</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">addMaterial</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">addMaterial</span><span class="p">(</span><span class="s2">&quot;Bedrock&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.findMaterial">
+<span class="sig-name descname"><span class="pre">findMaterial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.findMaterial" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the material_id of the material with the given name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>material_name</strong> (<em>str</em>) – the name of the material</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the material ID, or -1 if material was not found.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mat_id</span> <span class="o">=</span> <span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mat_id</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.getMaterialName">
+<span class="sig-name descname"><span class="pre">getMaterialName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.getMaterialName" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the name of the material given by the material_id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>material_id</strong> (<em>int</em>) – The material id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The name of the material</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.getMaterials">
+<span class="sig-name descname"><span class="pre">getMaterials</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.getMaterials" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a dictionary with all material names and material ids.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dictionary { str : int } with name : id pairs</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">getMaterials</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="s1">&#39;Sand&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Clay&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Bedrock&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.getProperties">
+<span class="sig-name descname"><span class="pre">getProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.getProperties" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a dictionary with all properties defined for the material with the given ID.
+The key of each entry is the parameter ID (ifm.Enum.P_*) and the value of the parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>material_id</strong> (<em>int</em>) – The material id</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dictionary { int : float } with parameter_id : parameter_value pairs, where the parameter_id
+corresponds to the constants of ifm.Enum.P_*.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">getProperties</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="mi">100</span><span class="p">:</span> <span class="mf">1e-06</span><span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.getPropertyValue">
+<span class="sig-name descname"><span class="pre">getPropertyValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.getPropertyValue" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the value of a parameter given by the material_id and the parameter ID (ifm.Enum.P_*).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>parameter</strong> (<em>int</em>) – The parameter identifier (as defined in ifm.Enum.P_*)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the parameter value.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">value</span> <span class="o">=</span> <span class="n">lookup</span><span class="o">.</span><span class="n">getPropertyValue</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">),</span> <span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">P_COND</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">1e-06</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.hasProperty">
+<span class="sig-name descname"><span class="pre">hasProperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.hasProperty" title="Permalink to this definition"></a></dt>
+<dd><p>Checks if the value of a parameter given by the material_id and the parameter ID (ifm.Enum.P_*) exists
+in the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>parameter</strong> (<em>int</em>) – The parameter identifier (as defined in ifm.Enum.P_*)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if value exists, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.moveMaterial">
+<span class="sig-name descname"><span class="pre">moveMaterial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.moveMaterial" title="Permalink to this definition"></a></dt>
+<dd><p>Moves a material to a new position in the lookup table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>new_position</strong> (<em>int</em>) – The new position of the material in the table. Indexing starts with zero.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.removeMaterial">
+<span class="sig-name descname"><span class="pre">removeMaterial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.removeMaterial" title="Permalink to this definition"></a></dt>
+<dd><p>Removes a material (=row of the lookup table).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>material_id</strong> (<em>int</em>) – The material id</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">removeMaterial</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">removeMaterial</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.removeProperty">
+<span class="sig-name descname"><span class="pre">removeProperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.removeProperty" title="Permalink to this definition"></a></dt>
+<dd><p>Removes a property of a material from  the table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>parameter</strong> (<em>int</em>) – The parameter identifier (as defined in ifm.Enum.P_*)</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">removeProperty</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">),</span>  <span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">P_COND</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.setMaterialId">
+<span class="sig-name descname"><span class="pre">setMaterialId</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_material_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.setMaterialId" title="Permalink to this definition"></a></dt>
+<dd><p>Sets a new material_id for a specified material.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>new_material_id</strong> (<em>int</em>) – The material id</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">setMaterialId</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Sand&quot;</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.LookupTable.setPropertyValue">
+<span class="sig-name descname"><span class="pre">setPropertyValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.LookupTable.setPropertyValue" title="Permalink to this definition"></a></dt>
+<dd><p>Sets or overwrites a new property value for a given material and parameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>material_id</strong> (<em>int</em>) – The material id</p></li>
+<li><p><strong>parameter</strong> (<em>int</em>) – The parameter identifier (as defined in ifm.Enum.P_*)</p></li>
+<li><p><strong>value</strong> (<em>float</em>) – The value to be set.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lookup</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">lookup</span><span class="o">.</span><span class="n">findMaterial</span><span class="p">(</span><span class="s2">&quot;Clay&quot;</span><span class="p">),</span> <span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">P_COND</span><span class="p">,</span> <span class="mf">1e-6</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-mlwinfo">
+<h2>ifm.MLWInfo<a class="headerlink" href="#ifm-mlwinfo" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.MLWInfo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">MLWInfo</span></span><a class="headerlink" href="#ifm.MLWInfo" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getBottomElevation">
+<span class="sig-name descname"><span class="pre">getBottomElevation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getBottomElevation" title="Permalink to this definition"></a></dt>
+<dd><p>Get Bottom elevation of multi-layer well [].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>bottom elevation in [m]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getBottomNode">
+<span class="sig-name descname"><span class="pre">getBottomNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getBottomNode" title="Permalink to this definition"></a></dt>
+<dd><p>Biggest node index with z[n] &gt; topElevation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>index of bottom node</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getId">
+<span class="sig-name descname"><span class="pre">getId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getId" title="Permalink to this definition"></a></dt>
+<dd><p>get index of multi-layer well</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>index of multi-layer well</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getName">
+<span class="sig-name descname"><span class="pre">getName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getName" title="Permalink to this definition"></a></dt>
+<dd><p>Name attribute of multi-layer well</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>name of multi-layer well</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getRadius">
+<span class="sig-name descname"><span class="pre">getRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getRadius" title="Permalink to this definition"></a></dt>
+<dd><p>Radius of multi-layer well [m]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>radius of multi-layer well</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getTopElevation">
+<span class="sig-name descname"><span class="pre">getTopElevation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getTopElevation" title="Permalink to this definition"></a></dt>
+<dd><p>Top elevation of multi-layer well [m]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>top elevation of multi-layer well</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.MLWInfo.getTopNode">
+<span class="sig-name descname"><span class="pre">getTopNode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.MLWInfo.getTopNode" title="Permalink to this definition"></a></dt>
+<dd><p>Smallest node index with z[n] &lt; topElevation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>top node of multi-layer well</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-nodalbudget">
+<h2>ifm.NodalBudget<a class="headerlink" href="#ifm-nodalbudget" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.NodalBudget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">NodalBudget</span></span><a class="headerlink" href="#ifm.NodalBudget" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getBorderIn">
+<span class="sig-name descname"><span class="pre">getBorderIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getBorderIn" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getBorderOut">
+<span class="sig-name descname"><span class="pre">getBorderOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getBorderOut" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getBulkIn">
+<span class="sig-name descname"><span class="pre">getBulkIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getBulkIn" title="Permalink to this definition"></a></dt>
+<dd><p>Distributed source/sink budget component</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getBulkOut">
+<span class="sig-name descname"><span class="pre">getBulkOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getBulkOut" title="Permalink to this definition"></a></dt>
+<dd><p>Distributed source/sink budget component</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getCauchyIn">
+<span class="sig-name descname"><span class="pre">getCauchyIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getCauchyIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getCauchyOut">
+<span class="sig-name descname"><span class="pre">getCauchyOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getCauchyOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getConvIn">
+<span class="sig-name descname"><span class="pre">getConvIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getConvIn" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getConvOut">
+<span class="sig-name descname"><span class="pre">getConvOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getConvOut" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getDirichletIn">
+<span class="sig-name descname"><span class="pre">getDirichletIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getDirichletIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getDirichletOut">
+<span class="sig-name descname"><span class="pre">getDirichletOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getDirichletOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getNetIn">
+<span class="sig-name descname"><span class="pre">getNetIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getNetIn" title="Permalink to this definition"></a></dt>
+<dd><p>Net imbalance: border + wells + bulk + stor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getNetOut">
+<span class="sig-name descname"><span class="pre">getNetOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getNetOut" title="Permalink to this definition"></a></dt>
+<dd><p>Net imbalance: border + wells + bulk + stor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getNeumannIn">
+<span class="sig-name descname"><span class="pre">getNeumannIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getNeumannIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getNeumannOut">
+<span class="sig-name descname"><span class="pre">getNeumannOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getNeumannOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getNodalValues">
+<span class="sig-name descname"><span class="pre">getNodalValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getNodalValues" title="Permalink to this definition"></a></dt>
+<dd><p>Nodal budget values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getStorIn">
+<span class="sig-name descname"><span class="pre">getStorIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getStorIn" title="Permalink to this definition"></a></dt>
+<dd><p>Storage change (Storativity/Compressibility/Capacity budget component)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getStorOut">
+<span class="sig-name descname"><span class="pre">getStorOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getStorOut" title="Permalink to this definition"></a></dt>
+<dd><p>Storage change (Storativity/Compressibility/Capacity budget component)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getWellIn">
+<span class="sig-name descname"><span class="pre">getWellIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getWellIn" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.NodalBudget.getWellOut">
+<span class="sig-name descname"><span class="pre">getWellOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.NodalBudget.getWellOut" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-parameter">
+<h2>ifm.Parameter<a class="headerlink" href="#ifm-parameter" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.Parameter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">Parameter</span></span><a class="headerlink" href="#ifm.Parameter" title="Permalink to this definition"></a></dt>
+<dd><p>Class representing a FEFLOW Parameter.</p>
+<p>The class does not provide functionality but can be used as a parameter type for a number of IFM API functions.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.getParameter" title="ifm.FeflowDoc.getParameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifm.FeflowDoc.getParameter</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">par</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getParameter</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">P_CONC</span><span class="p">,</span> <span class="s2">&quot;Potassium&quot;</span><span class="p">)</span> <span class="c1"># get the concentration of the species Potassium.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">values</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getParamValues</span><span class="p">(</span><span class="n">par</span><span class="p">)</span>  <span class="c1"># use the object as argument</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="ifm-particletracer">
+<h2>ifm.ParticleTracer<a class="headerlink" href="#ifm-particletracer" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.ParticleTracer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">ParticleTracer</span></span><a class="headerlink" href="#ifm.ParticleTracer" title="Permalink to this definition"></a></dt>
+<dd><p>Class providing access to FEFLOW’s particle Tracing functionality.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.createParticleTracer" title="ifm.FeflowDoc.createParticleTracer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifm.FeflowDoc.createParticleTracer</span></code></a></p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.generatePathLine">
+<span class="sig-name descname"><span class="pre">generatePathLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">x</span></em>, <em class="sig-param"><span class="pre">y</span></em><span class="optional">[</span>, <em class="sig-param"><span class="pre">z</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.generatePathLine" title="Permalink to this definition"></a></dt>
+<dd><p>Generate pathline from seed point using current settings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – x-coordinate of the seed point.</p></li>
+<li><p><strong>y</strong> (<em>float</em>) – y-coordinate of the seed point.</p></li>
+<li><p><strong>z</strong> (<em>float</em>) – z-coordinate of the seed point. 3D problems only.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The trajectory of the particle as a list of (x, y, [z], Tau) tuples. z is returned for 3D problems only.
+Travel time Tau is relative to current time step for streamlines / random walks (tracking mode = <cite>ifm.Enum.PT_MODE_STEADY</cite>) and
+relative to start time set by <cite>ParticleTracer.setInitialTime()</cite> for pathlines / random walk peridos (tracking mode = <cite>ifm.Enum.PT_MODE_UNSTEADY</cite>)
+Returns <cite>None</cite> if track is empty.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getAAxis_pitchParameter">
+<span class="sig-name descname"><span class="pre">getAAxis_pitchParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getAAxis_pitchParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Axisymmetry axis pitch angle as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Axisymmetry axis pitch angle</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getAAxis_pitchValue">
+<span class="sig-name descname"><span class="pre">getAAxis_pitchValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getAAxis_pitchValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Axisymmetry axis pitch angle (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Axisymmetry axis pitch angle</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getAAxis_yawParameter">
+<span class="sig-name descname"><span class="pre">getAAxis_yawParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getAAxis_yawParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Axisymmetry axis yaw angle as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Axisymmetry axis yaw angle</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getAAxis_yawValue">
+<span class="sig-name descname"><span class="pre">getAAxis_yawValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getAAxis_yawValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Axisymmetry axis yaw angle (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Axisymmetry axis yaw angle</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getAquiferThickness">
+<span class="sig-name descname"><span class="pre">getAquiferThickness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getAquiferThickness" title="Permalink to this definition"></a></dt>
+<dd><p>Get Aquifer thickness (homogeneous)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Aquifer thickness</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getCompressionEnabled">
+<span class="sig-name descname"><span class="pre">getCompressionEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getCompressionEnabled" title="Permalink to this definition"></a></dt>
+<dd><p>Get Compression of pathline points enabled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Compression Setting</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getDiffCoeffParameter">
+<span class="sig-name descname"><span class="pre">getDiffCoeffParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getDiffCoeffParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Molecular-diffusion coefficient as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Molecular-diffusion coefficient</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getDiffCoeffValue">
+<span class="sig-name descname"><span class="pre">getDiffCoeffValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getDiffCoeffValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Molecular-diffusion coefficient (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Molecular-diffusion coefficient</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getFinalTime">
+<span class="sig-name descname"><span class="pre">getFinalTime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getFinalTime" title="Permalink to this definition"></a></dt>
+<dd><p>Get Pathline final time [d].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>final time</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getInitialTime">
+<span class="sig-name descname"><span class="pre">getInitialTime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getInitialTime" title="Permalink to this definition"></a></dt>
+<dd><p>Get Pathline start time [d].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>start time</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getLongDispParameter">
+<span class="sig-name descname"><span class="pre">getLongDispParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getLongDispParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Longitudinal dispersivity as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Longitudinal dispersivity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getLongDispValue">
+<span class="sig-name descname"><span class="pre">getLongDispValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getLongDispValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Longitudinal dispersivity (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Longitudinal dispersivity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getLongDisp_mParameter">
+<span class="sig-name descname"><span class="pre">getLongDisp_mParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getLongDisp_mParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Longitudinal dispersivity (minimum) as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Longitudinal dispersivity (minimum)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getLongDisp_mValue">
+<span class="sig-name descname"><span class="pre">getLongDisp_mValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getLongDisp_mValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Longitudinal dispersivity (minimum, homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Longitudinal dispersivity (minimum)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getPorosityParameter">
+<span class="sig-name descname"><span class="pre">getPorosityParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getPorosityParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Porosity as a parameter (porosity, storativity, refdist)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Porosity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getPorosityValue">
+<span class="sig-name descname"><span class="pre">getPorosityValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getPorosityValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Porosity (homogeneous)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Porosity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRandomWalkMethod">
+<span class="sig-name descname"><span class="pre">getRandomWalkMethod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRandomWalkMethod" title="Permalink to this definition"></a></dt>
+<dd><p>Get random walk method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>random walk method</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>{<cite>ifm.Enum.PT_RW_BACKWARDITO</cite>, <cite>ifm.Enum.PT_RW_FORWARDITO</cite>, <cite>ifm.Enum.PT_RW_RK3ITO</cite>, <cite>ifm.Enum.PT_RW_STRATONOVICH</cite>}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRkAccuracy">
+<span class="sig-name descname"><span class="pre">getRkAccuracy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRkAccuracy" title="Permalink to this definition"></a></dt>
+<dd><p>Get Runge-Kutta integration accuracy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Runge-Kutta integration accuracy</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRkMaxElementSwitches">
+<span class="sig-name descname"><span class="pre">getRkMaxElementSwitches</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRkMaxElementSwitches" title="Permalink to this definition"></a></dt>
+<dd><p>Get Runge-Kutta max. number of element switches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Runge-Kutta max. number of element switches</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRkMaxStepsPerElement">
+<span class="sig-name descname"><span class="pre">getRkMaxStepsPerElement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRkMaxStepsPerElement" title="Permalink to this definition"></a></dt>
+<dd><p>Get Runge-Kutta max. steps per element</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Runge-Kutta max. steps per element</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRkMinStepSizeFactor">
+<span class="sig-name descname"><span class="pre">getRkMinStepSizeFactor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRkMinStepSizeFactor" title="Permalink to this definition"></a></dt>
+<dd><p>Get Runge-Kutta min. step size factor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Runge-Kutta min. step size factor</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getRkMinStepTime">
+<span class="sig-name descname"><span class="pre">getRkMinStepTime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getRkMinStepTime" title="Permalink to this definition"></a></dt>
+<dd><p>Get Runge-Kutta min. step time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Runge-Kutta min. step time</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getScaleDepDispDref">
+<span class="sig-name descname"><span class="pre">getScaleDepDispDref</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getScaleDepDispDref" title="Permalink to this definition"></a></dt>
+<dd><p>Get ScaleDepDispDref</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getScaleDepDispTref">
+<span class="sig-name descname"><span class="pre">getScaleDepDispTref</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getScaleDepDispTref" title="Permalink to this definition"></a></dt>
+<dd><p>Get ScaleDepDispTref</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getSorptionParameter">
+<span class="sig-name descname"><span class="pre">getSorptionParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getSorptionParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Henry-sorption parameter</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTrackingDirection">
+<span class="sig-name descname"><span class="pre">getTrackingDirection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTrackingDirection" title="Permalink to this definition"></a></dt>
+<dd><p>Get pathline tracking direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>pathline tracking direction</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>{<cite>Enum.PT_DIR_FORWARD</cite>, <cite>Enum.PT_DIR_BACKWARD</cite>}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTrackingMode">
+<span class="sig-name descname"><span class="pre">getTrackingMode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTrackingMode" title="Permalink to this definition"></a></dt>
+<dd><p>Get pathline tracking mode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>pathline tracking mode</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>{<cite>Enum.PT_MODE_STEADY</cite>, <cite>Enum.PT_MODE_UNSTEADY</cite>}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTrackingType">
+<span class="sig-name descname"><span class="pre">getTrackingType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTrackingType" title="Permalink to this definition"></a></dt>
+<dd><p>Get pathline tracking type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>pathline tracking type</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>{<cite>Enum.PT_TYPE_ADVECTIVE</cite>, <cite>Enum.PT_TYPE_RW</cite>}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTransvDispParameter">
+<span class="sig-name descname"><span class="pre">getTransvDispParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTransvDispParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transverse dispersivity as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Transverse dispersivity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTransvDispValue">
+<span class="sig-name descname"><span class="pre">getTransvDispValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTransvDispValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transverse dispersivity (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Transverse dispersivity</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTransvDisp_mParameter">
+<span class="sig-name descname"><span class="pre">getTransvDisp_mParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTransvDisp_mParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transverse dispersivity (minimum) as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Transverse dispersivity (minimum)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter">ifm.Parameter</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.getTransvDisp_mValue">
+<span class="sig-name descname"><span class="pre">getTransvDisp_mValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.getTransvDisp_mValue" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transverse dispersivity (minimum, homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Transverse dispersivity (minimum)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setAAxis_pitchParameter">
+<span class="sig-name descname"><span class="pre">setAAxis_pitchParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pitch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setAAxis_pitchParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Axisymmetry axis pitch angle as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pitch</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Axisymmetry axis pitch angle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setAAxis_pitchValue">
+<span class="sig-name descname"><span class="pre">setAAxis_pitchValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setAAxis_pitchValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Axisymmetry axis pitch angle (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pitch</strong> (<em>float</em>) – Axisymmetry axis pitch angle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setAAxis_yawParameter">
+<span class="sig-name descname"><span class="pre">setAAxis_yawParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setAAxis_yawParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Axisymmetry axis yaw angle as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>angle</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Axisymmetry axis yaw angle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setAAxis_yawValue">
+<span class="sig-name descname"><span class="pre">setAAxis_yawValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setAAxis_yawValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Axisymmetry axis yaw angle (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>angle</strong> (<em>float</em>) – Axisymmetry axis yaw angle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setAquiferThickness">
+<span class="sig-name descname"><span class="pre">setAquiferThickness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thickness</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setAquiferThickness" title="Permalink to this definition"></a></dt>
+<dd><p>Set Aquifer thickness (homogeneous)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>thickness</strong> (<em>float</em>) – Aquifer thickness</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setCompressionEnabled">
+<span class="sig-name descname"><span class="pre">setCompressionEnabled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setCompressionEnabled" title="Permalink to this definition"></a></dt>
+<dd><p>Set Compression of pathline points enabled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enable</strong> (<em>bool</em>) – Compression</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setDefaults">
+<span class="sig-name descname"><span class="pre">setDefaults</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setDefaults" title="Permalink to this definition"></a></dt>
+<dd><p>Reset to default settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setDiffCoeffParameter">
+<span class="sig-name descname"><span class="pre">setDiffCoeffParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coefficient</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setDiffCoeffParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Molecular-diffusion coefficient as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coefficient</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Molecular-diffusion coefficient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setDiffCoeffValue">
+<span class="sig-name descname"><span class="pre">setDiffCoeffValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setDiffCoeffValue" title="Permalink to this definition"></a></dt>
+<dd><p>setDiffCoeffValuecoefficient(coefficient)</p>
+<p>Set Molecular-diffusion coefficient (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>coefficient</strong> (<em>float</em>) – Molecular-diffusion coefficient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setFinalTime">
+<span class="sig-name descname"><span class="pre">setFinalTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setFinalTime" title="Permalink to this definition"></a></dt>
+<dd><p>Set the Pathline final time (absolute simulation time in days).</p>
+<p>Required for unsteady calculations only (pathlines / random walk periods).</p>
+<p>For forward tracking, choose value greater than initial time.
+For backward tracking, choose value smaller than initial time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>time</strong> (<em>float</em>) – final Pathline time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setInitialTime">
+<span class="sig-name descname"><span class="pre">setInitialTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setInitialTime" title="Permalink to this definition"></a></dt>
+<dd><p>Set the Pathline start time (absolute simulation time in days).</p>
+<p>For forward tracking, choose value smaller than final time.
+For backward tracking, choose value greater than initial time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>time</strong> (<em>float</em>) – initial Pathline time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setLongDispParameter">
+<span class="sig-name descname"><span class="pre">setLongDispParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dispersivity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setLongDispParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Longitudinal dispersivity as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dispersivity</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Longitudinal dispersivity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setLongDispValue">
+<span class="sig-name descname"><span class="pre">setLongDispValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dispersivity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setLongDispValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Longitudinal dispersivity (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dispersivity</strong> (<em>float</em>) – Longitudinal dispersivity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setLongDisp_mParameter">
+<span class="sig-name descname"><span class="pre">setLongDisp_mParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dispersivity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setLongDisp_mParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Longitudinal dispersivity (minimum) as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dispersivity</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Longitudinal dispersivity (minimum)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setLongDisp_mValue">
+<span class="sig-name descname"><span class="pre">setLongDisp_mValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dispersivity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setLongDisp_mValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Longitudinal dispersivity (minimum, homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dispersivity</strong> (<em>float</em>) – Longitudinal dispersivity (minimum)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setPorosityParameter">
+<span class="sig-name descname"><span class="pre">setPorosityParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">porosity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setPorosityParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Porosity as a parameter (porosity,storativity,refdist)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>porosity</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Porosity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setPorosityValue">
+<span class="sig-name descname"><span class="pre">setPorosityValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">porosity</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setPorosityValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Porosity (homogeneous)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>porosity</strong> (<em>float</em>) – Porosity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRandomWalkMethod">
+<span class="sig-name descname"><span class="pre">setRandomWalkMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rwmethod</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRandomWalkMethod" title="Permalink to this definition"></a></dt>
+<dd><p>Set random walk method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rwmethod</strong> ({<cite>ifm.Enum.PT_RW_BACKWARDITO</cite>, <cite>ifm.Enum.PT_RW_STRATONOVICH</cite>, <cite>ifm.Enum.PT_RW_RK3ITO</cite>, <cite>PT_RW_FORWARDITO</cite>}) – Random walk computation method.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRkAccuracy">
+<span class="sig-name descname"><span class="pre">setRkAccuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accuracy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRkAccuracy" title="Permalink to this definition"></a></dt>
+<dd><p>Set Runge-Kutta integration accuracy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>accuracy</strong> (<em>float</em>) – Runge-Kutta integration accuracy</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRkMaxElementSwitches">
+<span class="sig-name descname"><span class="pre">setRkMaxElementSwitches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_switches</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRkMaxElementSwitches" title="Permalink to this definition"></a></dt>
+<dd><p>Set Runge-Kutta max. number of element switches</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n_switches</strong> (<em>int</em>) – Runge-Kutta max. number of element switches</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRkMaxStepsPerElement">
+<span class="sig-name descname"><span class="pre">setRkMaxStepsPerElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_steps</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRkMaxStepsPerElement" title="Permalink to this definition"></a></dt>
+<dd><p>Set Runge-Kutta max. steps per element</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n_steps</strong> (<em>int</em>) – Runge-Kutta max. steps per element</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRkMinStepSizeFactor">
+<span class="sig-name descname"><span class="pre">setRkMinStepSizeFactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRkMinStepSizeFactor" title="Permalink to this definition"></a></dt>
+<dd><p>Set Runge-Kutta min. step size factor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>factor</strong> (<em>float</em>) – Runge-Kutta min. step size factor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setRkMinStepTime">
+<span class="sig-name descname"><span class="pre">setRkMinStepTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setRkMinStepTime" title="Permalink to this definition"></a></dt>
+<dd><p>Set Runge-Kutta min. step time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>time</strong> (<em>float</em>) – Runge-Kutta min. step time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setScaleDepDispDref">
+<span class="sig-name descname"><span class="pre">setScaleDepDispDref</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setScaleDepDispDref" title="Permalink to this definition"></a></dt>
+<dd><p>Set ScaleDepDispDref</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setScaleDepDispTref">
+<span class="sig-name descname"><span class="pre">setScaleDepDispTref</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setScaleDepDispTref" title="Permalink to this definition"></a></dt>
+<dd><p>Set ScaleDepDispTref</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setSorptionParameter">
+<span class="sig-name descname"><span class="pre">setSorptionParameter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setSorptionParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Henry-sorption parameter</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTrackingDirection">
+<span class="sig-name descname"><span class="pre">setTrackingDirection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracking_direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTrackingDirection" title="Permalink to this definition"></a></dt>
+<dd><p>Set pathline tracking direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tracking_direction</strong> ({<cite>Enum.PT_DIR_FORWARD</cite>, <cite>Enum.PT_DIR_BACKWARD</cite>}) – The tracking direction to be set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTrackingMode">
+<span class="sig-name descname"><span class="pre">setTrackingMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracking_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTrackingMode" title="Permalink to this definition"></a></dt>
+<dd><p>Set pathline tracking mode (steady = streamlines, unsteady = pathlines)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tracking_mode</strong> ({<cite>Enum.PT_MODE_STEADY</cite>, <cite>Enum.PT_MODE_UNSTEADY</cite>}) – Tracking mode to be set. <cite>Enum.PT_MODE_STEADY</cite> enables calculation on a steady flow field at currently loaded time step, resulting in streamlines/random walks.
+<cite>Enum.PT_MODE_UNSTEADY</cite> enables calculation on the transient flow field, resulting in pathlines/random walks perids.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTrackingType">
+<span class="sig-name descname"><span class="pre">setTrackingType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracking_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTrackingType" title="Permalink to this definition"></a></dt>
+<dd><p>Set pathline tracking type (advective = classic streamline/pathline computation; rw = Random Walk method)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tracking_type</strong> ({<cite>Enum.PT_TYPE_ADVECTIVE</cite>, <cite>Enum.PT_TYPE_RW</cite>}) – Tracking type to be set. <cite>Enum.PT_TYPE_ADVECTIVE</cite> sets classic streamline/pathline computation on purely advective flow field,
+<cite>Enum.PT_TYPE_RW</cite> set the Random Walk method considering dispersive and diffusive effects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTransvDispParameter">
+<span class="sig-name descname"><span class="pre">setTransvDispParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTransvDispParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Transverse dispersivity as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>disp</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Transverse dispersivity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTransvDispValue">
+<span class="sig-name descname"><span class="pre">setTransvDispValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTransvDispValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Transverse dispersivity (homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>disp</strong> (<em>float</em>) – Transverse dispersivity</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTransvDisp_mParameter">
+<span class="sig-name descname"><span class="pre">setTransvDisp_mParameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTransvDisp_mParameter" title="Permalink to this definition"></a></dt>
+<dd><p>Set Transverse dispersivity (minimum) as a parameter (for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>disp</strong> (<a class="reference internal" href="#ifm.Parameter" title="ifm.Parameter"><em>ifm.Parameter</em></a>) – Transverse dispersivity (minimum)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.ParticleTracer.setTransvDisp_mValue">
+<span class="sig-name descname"><span class="pre">setTransvDisp_mValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ParticleTracer.setTransvDisp_mValue" title="Permalink to this definition"></a></dt>
+<dd><p>Set Transverse dispersivity (minimum, homogeneous, for random-walk tracking)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>disp</strong> (<em>float</em>) – Transverse dispersivity (minimum)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-subdomainbudget">
+<h2>ifm.SubdomainBudget<a class="headerlink" href="#ifm-subdomainbudget" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">SubdomainBudget</span></span><a class="headerlink" href="#ifm.SubdomainBudget" title="Permalink to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getBorderIn">
+<span class="sig-name descname"><span class="pre">getBorderIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getBorderIn" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getBorderOut">
+<span class="sig-name descname"><span class="pre">getBorderOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getBorderOut" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getBulkIn">
+<span class="sig-name descname"><span class="pre">getBulkIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getBulkIn" title="Permalink to this definition"></a></dt>
+<dd><p>Distributed source/sink budget component</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getBulkOut">
+<span class="sig-name descname"><span class="pre">getBulkOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getBulkOut" title="Permalink to this definition"></a></dt>
+<dd><p>Distributed source/sink budget component</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getCauchyIn">
+<span class="sig-name descname"><span class="pre">getCauchyIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getCauchyIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getCauchyOut">
+<span class="sig-name descname"><span class="pre">getCauchyOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getCauchyOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getConvIn">
+<span class="sig-name descname"><span class="pre">getConvIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getConvIn" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getConvOut">
+<span class="sig-name descname"><span class="pre">getConvOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getConvOut" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getDirichletIn">
+<span class="sig-name descname"><span class="pre">getDirichletIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getDirichletIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getDirichletOut">
+<span class="sig-name descname"><span class="pre">getDirichletOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getDirichletOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getInternalDFIn">
+<span class="sig-name descname"><span class="pre">getInternalDFIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getInternalDFIn" title="Permalink to this definition"></a></dt>
+<dd><p>Discrete-feature contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getInternalDFOut">
+<span class="sig-name descname"><span class="pre">getInternalDFOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getInternalDFOut" title="Permalink to this definition"></a></dt>
+<dd><p>Discrete-feature contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getInternalPMIn">
+<span class="sig-name descname"><span class="pre">getInternalPMIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getInternalPMIn" title="Permalink to this definition"></a></dt>
+<dd><p>Porous-media contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getInternalPMOut">
+<span class="sig-name descname"><span class="pre">getInternalPMOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getInternalPMOut" title="Permalink to this definition"></a></dt>
+<dd><p>Porous-media contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getNetIn">
+<span class="sig-name descname"><span class="pre">getNetIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getNetIn" title="Permalink to this definition"></a></dt>
+<dd><p>Net imbalance: border + wells + bulk + stor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getNetOut">
+<span class="sig-name descname"><span class="pre">getNetOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getNetOut" title="Permalink to this definition"></a></dt>
+<dd><p>Net imbalance: border + wells + bulk + stor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getNeumannIn">
+<span class="sig-name descname"><span class="pre">getNeumannIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getNeumannIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getNeumannOut">
+<span class="sig-name descname"><span class="pre">getNeumannOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getNeumannOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getStorIn">
+<span class="sig-name descname"><span class="pre">getStorIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getStorIn" title="Permalink to this definition"></a></dt>
+<dd><p>Storage change (Storativity/Compressibility/Capacity budget component)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getStorOut">
+<span class="sig-name descname"><span class="pre">getStorOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getStorOut" title="Permalink to this definition"></a></dt>
+<dd><p>Storage change (Storativity/Compressibility/Capacity budget component)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getWellIn">
+<span class="sig-name descname"><span class="pre">getWellIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getWellIn" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainBudget.getWellOut">
+<span class="sig-name descname"><span class="pre">getWellOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainBudget.getWellOut" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-subdomaintransferbudget">
+<h2>ifm.SubdomainTransferBudget<a class="headerlink" href="#ifm-subdomaintransferbudget" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">SubdomainTransferBudget</span></span><a class="headerlink" href="#ifm.SubdomainTransferBudget" title="Permalink to this definition"></a></dt>
+<dd><p>Class containing the result of a sub-domain transfer budget calculation.
+Create this object by calling <cite>ifm.FeflowDoc.budgetComputeSubdomainTransfer</cite>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.budgetComputeSubdomainTransfer" title="ifm.FeflowDoc.budgetComputeSubdomainTransfer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifm.FeflowDoc.budgetComputeSubdomainTransfer</span></code></a></p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getBorderIn">
+<span class="sig-name descname"><span class="pre">getBorderIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getBorderIn" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getBorderOut">
+<span class="sig-name descname"><span class="pre">getBorderOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getBorderOut" title="Permalink to this definition"></a></dt>
+<dd><p>Border budget component (1st + 2nd + 3rd kind BCs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getCauchyIn">
+<span class="sig-name descname"><span class="pre">getCauchyIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getCauchyIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getCauchyOut">
+<span class="sig-name descname"><span class="pre">getCauchyOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getCauchyOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Cauchy budget component (3rd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getConvIn">
+<span class="sig-name descname"><span class="pre">getConvIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getConvIn" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getConvOut">
+<span class="sig-name descname"><span class="pre">getConvOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getConvOut" title="Permalink to this definition"></a></dt>
+<dd><p>Convective part</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getDirichletIn">
+<span class="sig-name descname"><span class="pre">getDirichletIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getDirichletIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getDirichletOut">
+<span class="sig-name descname"><span class="pre">getDirichletOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getDirichletOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Dirichlet budget component (1st kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getInternalDFIn">
+<span class="sig-name descname"><span class="pre">getInternalDFIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getInternalDFIn" title="Permalink to this definition"></a></dt>
+<dd><p>Discrete-feature contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getInternalDFOut">
+<span class="sig-name descname"><span class="pre">getInternalDFOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getInternalDFOut" title="Permalink to this definition"></a></dt>
+<dd><p>Discrete-feature contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getInternalPMIn">
+<span class="sig-name descname"><span class="pre">getInternalPMIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getInternalPMIn" title="Permalink to this definition"></a></dt>
+<dd><p>Porous-media contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getInternalPMOut">
+<span class="sig-name descname"><span class="pre">getInternalPMOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getInternalPMOut" title="Permalink to this definition"></a></dt>
+<dd><p>Porous-media contribution to transfer through internal subdomain boundary (including BCs on internal subdomain boundary)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getNeumannIn">
+<span class="sig-name descname"><span class="pre">getNeumannIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getNeumannIn" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getNeumannOut">
+<span class="sig-name descname"><span class="pre">getNeumannOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getNeumannOut" title="Permalink to this definition"></a></dt>
+<dd><p>BC Neumann budget component (2nd kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getNodalValues">
+<span class="sig-name descname"><span class="pre">getNodalValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getNodalValues" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a vector of nodal fluxes of the masking domain if the <cite>compute_nodal_budget</cite> was set to <cite>True</cite> when this instance
+was created by calling <cite>ifm.FeflowDoc.budgetComputeSubdomainTransfer</cite> (otherwise, an empty list is returned).</p>
+<p>The vector has length of the masking domain vector (parameter <cite>nodes</cite>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>[float]</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">md</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span>  <span class="c1"># node indices of masking domain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">doi</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">]</span>  <span class="c1"># element indices of domain of interes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">budget</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">budgetComputeSubdomainTransfer</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">md</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">nodal_flux</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="n">budget</span><span class="o">.</span><span class="n">getNodalValues</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">budget</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getTransferIn">
+<span class="sig-name descname"><span class="pre">getTransferIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getTransferIn" title="Permalink to this definition"></a></dt>
+<dd><p>Net subdomain transfer: border + wells + internal_pm + internal_df</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getTransferOut">
+<span class="sig-name descname"><span class="pre">getTransferOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getTransferOut" title="Permalink to this definition"></a></dt>
+<dd><p>Net subdomain transfer: border + wells + internal_pm + internal_df</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getWellIn">
+<span class="sig-name descname"><span class="pre">getWellIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getWellIn" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SubdomainTransferBudget.getWellOut">
+<span class="sig-name descname"><span class="pre">getWellOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SubdomainTransferBudget.getWellOut" title="Permalink to this definition"></a></dt>
+<dd><p>Well budget component (4th kind)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>flow rate, mass flux or heat flux</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api_doc.html" class="btn btn-neutral float-left" title="IFM FEFLOW Model Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api_callbacks.html" class="btn btn-neutral float-right" title="Callbacks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 DHI.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

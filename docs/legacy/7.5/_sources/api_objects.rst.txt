@@ -1,0 +1,49 @@
+IFM Classes
+========================
+
+ifm.Budget
+----------
+.. autoclass:: ifm.Budget
+	:members:
+
+ifm.BudgetResultEx
+------------------
+.. autoclass:: ifm.BudgetResultEx
+	:members:
+
+ifm.LookupTable
+---------------
+.. autoclass:: ifm.LookupTable
+	:members:
+
+ifm.MLWInfo
+-----------
+.. autoclass:: ifm.MLWInfo
+	:members:
+
+ifm.NodalBudget
+---------------
+.. autoclass:: ifm.NodalBudget
+	:members:
+	
+ifm.Parameter
+---------------------------
+.. autoclass:: ifm.Parameter
+	:members:
+
+ifm.ParticleTracer
+------------------
+.. autoclass:: ifm.ParticleTracer
+	:members:
+
+ifm.SubdomainBudget
+-------------------
+.. autoclass:: ifm.SubdomainBudget
+	:members:
+
+ifm.SubdomainTransferBudget
+---------------------------
+.. autoclass:: ifm.SubdomainTransferBudget
+	:members:
+
+

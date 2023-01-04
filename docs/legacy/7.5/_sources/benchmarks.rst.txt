@@ -1,0 +1,62 @@
+.. _benchmarks:
+
+Examples
+========
+
+Snippets
+--------
+
+Add layer information to exported streamline data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This script uses a shape-file containing the points of streamlines exported from a FEFLOW simulation and adds a column with the according layer number of each point.
+
+https://github.com/DHI/ifm/blob/master/examples/particle-tracing/find_layers_for_streamlines.ipynb
+
+Changing Properties of Discrete Feature Elements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A simple example to change properties of Discrete Features Elements in FEFLOW.
+It is used to turn DFE on or off during the simulation
+
+https://github.com/DHI/ifm/blob/master/examples/discrete-features-transient.ipynb
+
+Changing the Error Tolerance at Runtime
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Change the error tolerance at runtime showcasing its influence on FEFLOWs time stepping behavior.
+
+https://github.com/DHI/ifm/blob/master/examples/adjust_error-tolerance-from-timeseries.ipynb
+
+
+Implementing the Mass-Load Boundary Condition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This scripts implements a Cauchy Boundary Condition to specify total mass flux and hence inflowing concentration 
+even if using the convective form of transport.
+
+https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb
+
+
+Evaluating performances for different threads and solvers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This scripts evaluates the computational performance of a given model for different number of threads and solver types.
+
+https://github.com/DHI/ifm/blob/master/examples/set-threads-solver-measure-runtime.ipynb
+
+FEFLOW benchmarks
+-----------------
+
+Heat Transport
+^^^^^^^^^^^^^^
+.. toctree::
+
+**Domenico and Palciauskas (1973)**
+
+This is a benchmark to verify FEFLOWs ability to solve advective-dispersive-conductive heat transport models:
+
+https://github.com/DHI/ifm/blob/master/benchmarks/domenico_palciauskas/domenico_palciauskas.ipynb
+
+We will add more benchmarks over time. Do you have a numeric benchmark you want us to publish here? 
+Please don't hesitate to contact us at mike.de@dhigroup.com!

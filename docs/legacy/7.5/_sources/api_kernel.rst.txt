@@ -1,0 +1,6 @@
+IFM Kernel Methods
+=====================
+
+.. autoclass:: ifm.ifm
+	:members:
+	

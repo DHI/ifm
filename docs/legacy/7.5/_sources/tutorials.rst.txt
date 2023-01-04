@@ -1,0 +1,28 @@
+.. _tutorials:
+
+Tutorials
+=================
+
+	**New Features in FEFLOW 7.5**
+	
+		* Lookup Table
+		* Solver and Parallelization Settings
+	
+	https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7500.ipynb
+
+	**New Features in FEFLOW 7.4**
+
+		* Particle Tracking
+		* Simulation Engine
+		* Budget and Content Charting
+		* Vectorized Access to Model Parameters
+		
+	https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb
+
+	**Introduction to ifm_contrib**
+	
+	This tutorial is an introduction for programming with the open source extension ifm_contrib:
+	https://github.com/DHI/ifm_contrib/blob/master/doc/Notebooks/getting_started.ipynb
+
+
+	
