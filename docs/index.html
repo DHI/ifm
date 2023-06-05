@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 8.000 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 8.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -26,14 +24,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> ifm
+
+          
+          
+          <a href="#" class="icon icon-home">
+            ifm
           </a>
               <div class="version">
                 8.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -62,8 +64,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>ifm: Python API for FEFLOW Groundwater Modelling System</li>
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ifm: Python API for FEFLOW Groundwater Modelling System</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -73,47 +75,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ifm-python-api-for-feflow-groundwater-modelling-system">
-<h1>ifm: Python API for FEFLOW Groundwater Modelling System<a class="headerlink" href="#ifm-python-api-for-feflow-groundwater-modelling-system" title="Permalink to this headline"></a></h1>
+  <div class="section" id="ifm-python-api-for-feflow-groundwater-modelling-system">
+<h1>ifm: Python API for FEFLOW Groundwater Modelling System<a class="headerlink" href="#ifm-python-api-for-feflow-groundwater-modelling-system" title="Permalink to this headline">¶</a></h1>
 <p>Programming Interface for the FEFLOW Grundwater Modelling System</p>
-<section id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline"></a></h2>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Python &gt;= 3.6</p></li>
-<li><p>FEFLOW 8.0</p></li>
+<li>Python &gt;= 3.6</li>
+<li>FEFLOW 8.0</li>
 </ul>
-</section>
-<section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>The ifm API is automatically installed with FEFLOW (Python API option must be selected).</p>
-</div></blockquote>
-</section>
-<section id="getting-started">
-<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h2>
+<div>The ifm API is automatically installed with FEFLOW (Python API option must be selected).</div></blockquote>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <p>There are multiple ways to use the IFM API of FEFLOW.</p>
 <ul class="simple">
-<li><p>import ifm as a package in a Python script.</p></li>
-<li><p>use the <cite>-python</cite> option when calling FEFLOW from the command line</p></li>
-<li><p>inject Python code into a FEFLOW model that is executed during model run time (<a class="reference internal" href="api_callbacks.html#callbacks"><span class="std std-ref">Callbacks</span></a>)</p></li>
+<li>import ifm as a package in a Python script.</li>
+<li>use the <cite>-python</cite> option when calling FEFLOW from the command line</li>
+<li>inject Python code into a FEFLOW model that is executed during model run time (<a class="reference internal" href="api_callbacks.html#callbacks"><span class="std std-ref">Callbacks</span></a>)</li>
 </ul>
 <p>The most common way is to import ifm as a package in a Python script. This is usually the preferred way during pre- and postprocessing.</p>
-<blockquote>
-<div><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="c1"># open a model and read the number of nodes</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="c1"># open a model and read the number of nodes</span>
 <span class="gp">&gt;&gt;&gt; </span> <span class="kn">import</span> <span class="nn">ifm</span>
 <span class="gp">&gt;&gt;&gt; </span> <span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">loadDocument</span><span class="p">(</span><span class="s2">&quot;myModel.fem&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span> <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">getNumberOfNodes</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>126</p>
-</div></blockquote>
-<p>The package resides in the C:Program FilesDHI2021FEFLOW 7.5python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+<p>The package resides in the C:Program FilesDHI2022FEFLOW 8.0python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.</p>
 <p>Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is .
 Use <cite>ifm.getKernelVersion()</cite> to make sure the desired FEFLOW version has been loaded.</p>
-</section>
-<section id="inline-python-skripts">
-<h2>Inline Python Skripts<a class="headerlink" href="#inline-python-skripts" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="inline-python-skripts">
+<h2>Inline Python Skripts<a class="headerlink" href="#inline-python-skripts" title="Permalink to this headline">¶</a></h2>
 <p>FEFLOW Python scripting capabilities are activated via Global Settings options from the  Tools menu.
 The option  Enable Scripting is part of the section Tool Properties. Once this scripting option has been activated,
 FEFLOW will remember the user-defined setting and provide access to the  Scripting menu.</p>
@@ -124,8 +122,8 @@ and referred to the current document instance (either FEM file or DAC file) load
 The simple example just print the total number of nodes in the finite-element mesh.</p>
 <p><a class="reference external" href="http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html">http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html</a></p>
 <ul class="simple">
-<li><p>Note: The in-built Python interpreter has standard libs only.
-Non standard-librarys can be imported from a separate environment. Experience showed that installations from python.org is more stable than conda-environments.</p></li>
+<li>Note: The in-built Python interpreter has standard libs only.
+Non standard-librarys can be imported from a separate environment. Experience showed that installations from python.org is more stable than conda-environments.</li>
 </ul>
 <p>Depreciation notice: Future versions of FEFLOW may require an external Python runtime instead of using the in-built environments.</p>
 <div class="toctree-wrapper compound">
@@ -145,6 +143,7 @@ Non standard-librarys can be imported from a separate environment. Experience sh
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-particletracer">ifm.ParticleTracer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-subdomainbudget">ifm.SubdomainBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-subdomaintransferbudget">ifm.SubdomainTransferBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-wellmanager">ifm.WellManager</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api_callbacks.html">Callbacks</a></li>
@@ -162,16 +161,16 @@ Non standard-librarys can be imported from a separate environment. Experience sh
 </li>
 </ul>
 </div>
-</section>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
-</section>
+</div>
 
 
            </div>

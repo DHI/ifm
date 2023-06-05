@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFM Kernel Methods &mdash; ifm 8.000 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>IFM Kernel Methods &mdash; ifm 8.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -27,14 +25,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> ifm
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ifm
           </a>
               <div class="version">
                 8.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -63,8 +65,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>IFM Kernel Methods</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">IFM Kernel Methods</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/api_kernel.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -74,148 +76,169 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ifm-kernel-methods">
-<h1>IFM Kernel Methods<a class="headerlink" href="#ifm-kernel-methods" title="Permalink to this headline"></a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="ifm.ifm">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">ifm</span></span><a class="headerlink" href="#ifm.ifm" title="Permalink to this definition"></a></dt>
-<dd><dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.enableScripting">
-<span class="sig-name descname"><span class="pre">enableScripting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.enableScripting" title="Permalink to this definition"></a></dt>
+  <div class="section" id="ifm-kernel-methods">
+<h1>IFM Kernel Methods<a class="headerlink" href="#ifm-kernel-methods" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ifm.ifm">
+<em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">ifm</code><a class="headerlink" href="#ifm.ifm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="ifm.ifm.enableScripting">
+<code class="descname">enableScripting</code><span class="sig-paren">(</span><em>enable</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.enableScripting" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enables FEFLOW internal Python scripts.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>enable</strong> (<em>bool</em>) – True to enable Script execution, False to disable.</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enable</strong> (<em>bool</em>) – True to enable Script execution, False to disable.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.forceLicense">
-<span class="sig-name descname"><span class="pre">forceLicense</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.forceLicense" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.forceLicense">
+<code class="descname">forceLicense</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.forceLicense" title="Permalink to this definition">¶</a></dt>
 <dd><p>Force FEFLOW to use a specific license option when opening the model.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>options</strong> (<em>str</em>) – license options - e.g. “FM2”, “FMH3”, “Viewer”</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>options</strong> (<em>str</em>) – license options - e.g. “FM2”, “FMH3”, “Viewer”</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">forceLicense</span><span class="p">(</span><span class="s2">&quot;Viewer&quot;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">forceLicense</span><span class="p">(</span><span class="s2">&quot;Viewer&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.getDocument">
-<span class="sig-name descname"><span class="pre">getDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">document_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getDocument" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.getDocument">
+<code class="descname">getDocument</code><span class="sig-paren">(</span><em>document_id</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getDocument" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an active FEFLOW document.
 Used in Multi-Document operations when multiple FEFLOW models are loaded by the ifm at the same time.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>document_id</strong> (<em>int</em>) – The id of the document.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The requested FEFLOW document.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc">ifm.FeflowDoc</a></p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>document_id</strong> (<em>int</em>) – The id of the document.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The requested FEFLOW document.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc">ifm.FeflowDoc</a></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference internal" href="#ifm.ifm.getNumberOfDocuments" title="ifm.ifm.getNumberOfDocuments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNumberOfDocuments</span></code></a></p>
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#ifm.ifm.getNumberOfDocuments" title="ifm.ifm.getNumberOfDocuments"><code class="xref py py-meth docutils literal notranslate"><span class="pre">getNumberOfDocuments()</span></code></a></p>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.getKernelRevision">
-<span class="sig-name descname"><span class="pre">getKernelRevision</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getKernelRevision" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.getKernelRevision">
+<code class="descname">getKernelRevision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getKernelRevision" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve build system version number
 Currently, this version number corresponds with the SVN revision of the source code control system.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Returns decimal FEM kernel version, e.g., 18503 for FEFLOW 7.3.0.18503</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns decimal FEM kernel version, e.g., 18503 for FEFLOW 7.3.0.18503</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.getKernelVersion">
-<span class="sig-name descname"><span class="pre">getKernelVersion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getKernelVersion" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.getKernelVersion">
+<code class="descname">getKernelVersion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getKernelVersion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve FEFLOW kernel version</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>Returns decimal FEM kernel version, e.g., 7000 for FEFLOW 7.0</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Returns decimal FEM kernel version, e.g., 7000 for FEFLOW 7.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.getNumberOfDocuments">
-<span class="sig-name descname"><span class="pre">getNumberOfDocuments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getNumberOfDocuments" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.getNumberOfDocuments">
+<code class="descname">getNumberOfDocuments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.getNumberOfDocuments" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the total number of active FEFLOW documents.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>The total number of active FEFLOW documents.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>int</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The total number of active FEFLOW documents.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.loadDocument">
-<span class="sig-name descname"><span class="pre">loadDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.loadDocument" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.loadDocument">
+<code class="descname">loadDocument</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.loadDocument" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load a FEFLOW model (.fem) or FEFLOW results file (.dac) as a FEFLOW document.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – path to FEFLOW model    .</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Returns decimal FEM kernel version, e.g., 7000 for FEFLOW 7.0</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc">ifm.FeflowDoc</a></p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>str</em>) – path to FEFLOW model    .</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Returns decimal FEM kernel version, e.g., 7000 for FEFLOW 7.0</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc">ifm.FeflowDoc</a></td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">loadDocument</span><span class="p">(</span><span class="s2">&quot;MyModel.fem&quot;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">loadDocument</span><span class="p">(</span><span class="s2">&quot;MyModel.fem&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.registerIfmModules">
-<span class="sig-name descname"><span class="pre">registerIfmModules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.registerIfmModules" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.registerIfmModules">
+<code class="descname">registerIfmModules</code><span class="sig-paren">(</span><em>module_path</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.registerIfmModules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register IFM module(s) to the current user’s profile</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>module</strong> (<em>str</em><em> or </em><em>list of str</em>) – module_path or list of module_paths</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>module</strong> (<em>str</em><em> or </em><em>list of str</em>) – module_path or list of module_paths</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.setThreads">
-<span class="sig-name descname"><span class="pre">setThreads</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threads_assembly</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threads_solver</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.setThreads" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.setThreads">
+<code class="descname">setThreads</code><span class="sig-paren">(</span><em>threads_assembly</em>, <em>threads_solver</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.setThreads" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set threads for matrix assembly and matrix solving</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>threads_assembly</strong> (<em>int</em>) – number of threads for matrix assembly</p></li>
-<li><p><strong>threads_solver</strong> (<em>int</em><em>, </em><em>optional</em>) – number of threads for matrix solving</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>threads_assembly</strong> (<em>int</em>) – number of threads for matrix assembly</li>
+<li><strong>threads_solver</strong> (<em>int</em><em>, </em><em>optional</em>) – number of threads for matrix solving</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Example</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">n_threads</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">n_threads</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">setThreads</span><span class="p">(</span><span class="n">n_threads</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">n_threads_solver</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">setThreads</span><span class="p">(</span><span class="n">n_threads</span><span class="p">,</span> <span class="n">n_threads_solver</span><span class="p">)</span>
@@ -223,20 +246,23 @@ Currently, this version number corresponds with the SVN revision of the source c
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.ifm.unregisterIfmModules">
-<span class="sig-name descname"><span class="pre">unregisterIfmModules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.unregisterIfmModules" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.ifm.unregisterIfmModules">
+<code class="descname">unregisterIfmModules</code><span class="sig-paren">(</span><em>module_id</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.unregisterIfmModules" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unregister IFM module(s) from the current user’s profile</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>module_id</strong> – Module_id or list of module ids.</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>module_id</strong> – Module_id or list of module ids.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
 
-</section>
+</div>
 
 
            </div>

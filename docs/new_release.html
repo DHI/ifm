@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Features / Version History &mdash; ifm 8.000 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>New Features / Version History &mdash; ifm 8.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
-  
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -26,14 +24,18 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> ifm
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ifm
           </a>
               <div class="version">
                 8.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -67,8 +69,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>New Features / Version History</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">New Features / Version History</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/new_release.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -78,36 +80,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="new-features-version-history">
-<span id="new-release"></span><h1>New Features / Version History<a class="headerlink" href="#new-features-version-history" title="Permalink to this headline"></a></h1>
-<section id="new-api-features-in-feflow-8-0">
-<h2>New API features in FEFLOW 8.0<a class="headerlink" href="#new-api-features-in-feflow-8-0" title="Permalink to this headline"></a></h2>
-<p>FEFLOW 8.0 doesn’t present new API functions.</p>
-</section>
-<section id="new-api-features-in-feflow-7-5">
-<h2>New API features in FEFLOW 7.5<a class="headerlink" href="#new-api-features-in-feflow-7-5" title="Permalink to this headline"></a></h2>
+  <div class="section" id="new-features-version-history">
+<span id="new-release"></span><h1>New Features / Version History<a class="headerlink" href="#new-features-version-history" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="new-api-features-in-feflow-8-0">
+<h2>New API features in FEFLOW 8.0<a class="headerlink" href="#new-api-features-in-feflow-8-0" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Access to the Lookup Table</p></li>
-<li><p>Setting solver type</p></li>
-<li><p>Setting Number of threads for parallel computation</p></li>
+<li>Access to the Well Manager</li>
+</ul>
+</div>
+<div class="section" id="new-api-features-in-feflow-7-5">
+<h2>New API features in FEFLOW 7.5<a class="headerlink" href="#new-api-features-in-feflow-7-5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Access to the Lookup Table</li>
+<li>Setting solver type</li>
+<li>Setting Number of threads for parallel computation</li>
 </ul>
 <p>See the tutorial for an introduction to new feautures:</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7500.ipynb">https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7500.ipynb</a></p>
-</section>
-<section id="new-api-features-in-feflow-7-4">
-<h2>New API features in FEFLOW 7.4<a class="headerlink" href="#new-api-features-in-feflow-7-4" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="new-api-features-in-feflow-7-4">
+<h2>New API features in FEFLOW 7.4<a class="headerlink" href="#new-api-features-in-feflow-7-4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Improved vectorized access to model parameters</p></li>
-<li><p>Better control of the simulation engine</p></li>
-<li><p>Setting history charting for selections</p></li>
-<li><p>Particle tracking</p></li>
+<li>Improved vectorized access to model parameters</li>
+<li>Better control of the simulation engine</li>
+<li>Setting history charting for selections</li>
+<li>Particle tracking</li>
 </ul>
 <p>Tutorial showcasing features introduced with FEFLOW 7.4:</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb">https://github.com/DHI/ifm/blob/master/tutorials/whats-new-in-ifm7400.ipynb</a></p>
-<p>Legacy Help - FEFLOW 7.5:</p>
-<p><a class="reference external" href="https://dhi.github.io/ifm/legacy/7.5/">https://dhi.github.io/ifm/legacy/7.5/</a></p>
-</section>
-</section>
+<p>Legacy Help - FEFLOW 7.4:</p>
+<p><a class="reference external" href="https://dhi.github.io/ifm/legacy/7.4/">https://dhi.github.io/ifm/legacy/7.4/</a></p>
+</div>
+</div>
 
 
            </div>

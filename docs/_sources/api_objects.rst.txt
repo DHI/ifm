@@ -45,5 +45,10 @@ ifm.SubdomainTransferBudget
 ---------------------------
 .. autoclass:: ifm.SubdomainTransferBudget
 	:members:
+	
+ifm.WellManager
+---------------------------
+.. autoclass:: ifm.WellManager
+	:members:	
 
 
