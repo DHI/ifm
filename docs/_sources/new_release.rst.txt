@@ -3,6 +3,12 @@
 New Features / Version History
 ==============================
 
+New API features in FEFLOW 8.1
+------------------------------
+* Access to the Supermesh
+* Create mesh from plane 
+
+
 New API features in FEFLOW 8.0
 ------------------------------
 * Access to the Well Manager

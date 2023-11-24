@@ -35,6 +35,11 @@ ifm.ParticleTracer
 ------------------
 .. autoclass:: ifm.ParticleTracer
 	:members:
+	
+ifm.ProblemDefinition
+---------------------
+.. autoclass:: ifm.ProblemDefinition
+	:members:	
 
 ifm.SubdomainBudget
 -------------------
@@ -45,6 +50,11 @@ ifm.SubdomainTransferBudget
 ---------------------------
 .. autoclass:: ifm.SubdomainTransferBudget
 	:members:
+	
+ifm.SuperMesh
+---------------------------
+.. autoclass:: ifm.SuperMesh
+	:members:	
 	
 ifm.WellManager
 ---------------------------

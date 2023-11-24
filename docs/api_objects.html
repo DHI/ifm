@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFM Classes &mdash; ifm 8.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>IFM Classes &mdash; ifm 8.100 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -32,7 +32,7 @@
             ifm
           </a>
               <div class="version">
-                8.0
+                8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -53,8 +53,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#ifm-nodalbudget">ifm.NodalBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-parameter">ifm.Parameter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-particletracer">ifm.ParticleTracer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-problemdefinition">ifm.ProblemDefinition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-subdomainbudget">ifm.SubdomainBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-subdomaintransferbudget">ifm.SubdomainTransferBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-supermesh">ifm.SuperMesh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-wellmanager">ifm.WellManager</a></li>
 </ul>
 </li>
@@ -1809,6 +1811,196 @@ For backward tracking, choose value greater than initial time.</p>
 </dd></dl>
 
 </div>
+<div class="section" id="ifm-problemdefinition">
+<h2>ifm.ProblemDefinition<a class="headerlink" href="#ifm-problemdefinition" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ifm.ProblemDefinition">
+<em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">ProblemDefinition</code><a class="headerlink" href="#ifm.ProblemDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class providing access to FEFLOW Problem Definition.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.getProblemDefinition" title="ifm.FeflowDoc.getProblemDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">ifm.FeflowDoc.getProblemDefinition</span></code></a></p>
+</div>
+<dl class="method">
+<dt id="ifm.ProblemDefinition.configureFreeSurface">
+<code class="descname">configureFreeSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.configureFreeSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>void pdf.configureFreeSurface(int phreatic[, int stat[nslices]])</p>
+<p>Method of Problem Definition objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>phreatic</strong> (<em>int</em>) – {<cite>ifm.Enum.PHR_CONFINED</cite>, <cite>ifm.Enum.PHR_UNCONFINED</cite>}</li>
+<li><strong>stat</strong><strong>[</strong><strong>]</strong> (<em>int</em>) – {<cite>ifm.Enum.SLC_PLANE</cite>, <cite>ifm.Enum.SLC_FIXED</cite>, <cite>ifm.Enum.SLC_UNSPECIFIED</cite>, <cite>ifm.Enum.SLC_MOVABLE</cite>, <cite>ifm.Enum.SLC_PHREATIC</cite>}</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pdf</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getProblemDefinition</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf</span><span class="o">.</span><span class="n">setProblemClass</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">TYPE_SATURATED</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">PCLS_MASS_TRANSPORT</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">TCLS_ST_UNST</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf</span><span class="o">.</span><span class="n">configureFreeSurface</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">PHR_UNCONFINED</span><span class="p">,</span> <span class="p">[</span><span class="n">Enum</span><span class="o">.</span><span class="n">SLC_PHREATIC</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">SLC_UNSPECIFIED</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">SLC_UNSPECIFIED</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">SLC_FIXED</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getChemicalSpeciesCount">
+<code class="descname">getChemicalSpeciesCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getChemicalSpeciesCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>int getChemicalSpeciesCount()</p>
+<p>Method of Problem Definition objects that returns the number of species of the Mass transport problem class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Ns</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number of species</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getHysteresisFlag">
+<code class="descname">getHysteresisFlag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getHysteresisFlag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getIterativeScheme">
+<code class="descname">getIterativeScheme</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getIterativeScheme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getProblemClass">
+<code class="descname">getProblemClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getProblemClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int problemClass</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getProblemType">
+<code class="descname">getProblemType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getProblemType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects that returns if the model is using “Standard (saturated)” (0) or “Richards’ equation” (1).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">{<cite>ifm.Enum.TYPE_SATURATED</cite>, <cite>ifm.Enum.TYPE_UNSATURATED</cite>}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int type</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getProjection">
+<code class="descname">getProjection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getProjection" title="Permalink to this definition">¶</a></dt>
+<dd><p>int pdf.getProjection()</p>
+<p>Method of Problem Definition objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int projection</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getRichardsEqForm">
+<code class="descname">getRichardsEqForm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getRichardsEqForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>int pdf.getRichardsEqForm()</p>
+<p>Method of Problem Definition objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getTimeClass">
+<code class="descname">getTimeClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getTimeClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getTotalSpeciesCount">
+<code class="descname">getTotalSpeciesCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getTotalSpeciesCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>int pdf.getTotalSpeciesCount()</p>
+<p>Method of Problem Definition objects that returns the total number of species of the problem class (Age + Mass transport).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Ns</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Total number of species</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.getUpwinding">
+<code class="descname">getUpwinding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.getUpwinding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.setProblemClass">
+<code class="descname">setProblemClass</code><span class="sig-paren">(</span><em>int pcls</em><span class="optional">[</span>, <em>int tcls</em><span class="optional">[</span>, <em>int type</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.setProblemClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Problem Definition objects to change problem class, time class and type of the model (steady, unsteady; saturated, unsaturated…)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pcls</strong> (<em>int</em>) – {<cite>ifm.Enum.PCLS_FLOW</cite>, <cite>ifm.Enum.PCLS_HEAT_TRANSPORT</cite>, <cite>ifm.Enum.PCLS_MASS_TRANSPORT</cite>, <cite>ifm.Enum.PCLS_THERMOHALINE</cite>}</li>
+<li><strong>tcls</strong> (<em>int</em>) – {<cite>ifm.Enum.TCLS_STEADY</cite>, <cite>ifm.Enum.TCLS_ST_UNST</cite>, <cite>ifm.Enum.TCLS_UNSTEADY</cite>}. <cite>ifm.Enum.TCLS_STEADY</cite> sets flow and transport both as steady state, <cite>ifm.Enum.TCLS_UNSTEADY</cite> both as transient, while <cite>ifm.Enum.TCLS_ST_UNST</cite> sets flow steady state and transport transient.</li>
+<li><strong>type</strong> (<em>int</em>) – {<cite>ifm.Enum.TYPE_SATURATED</cite>, <cite>ifm.Enum.TYPE_UNSATURATED</cite>}</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pdf</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">getProblemDefinition</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf</span><span class="o">.</span><span class="n">setProblemClass</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">PCLS_THERMOHALINE</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">TCLS_STEADY</span><span class="p">,</span> <span class="n">Enum</span><span class="o">.</span><span class="n">TYPE_SATURATED</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.ProblemDefinition.setProjection2D">
+<code class="descname">setProjection2D</code><span class="sig-paren">(</span><em>int proj</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ProblemDefinition.setProjection2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Projection for current Problem Definition instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>proj</strong> (<em>int</em>) – {<cite>ifm.Enum.PROJ_AXISYM_2D</cite>, <cite>ifm.Enum.PROJ_CONFINED_2D</cite>, <cite>ifm.Enum.PROJ_PHREATIC_2D</cite>, <cite>ifm.Enum.PROJ_VERTICAL_2D</cite>}</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
 <div class="section" id="ifm-subdomainbudget">
 <h2>ifm.SubdomainBudget<a class="headerlink" href="#ifm-subdomainbudget" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
@@ -2497,6 +2689,519 @@ was created by calling <cite>ifm.FeflowDoc.budgetComputeSubdomainTransfer</cite>
 </dd></dl>
 
 </div>
+<div class="section" id="ifm-supermesh">
+<h2>ifm.SuperMesh<a class="headerlink" href="#ifm-supermesh" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ifm.SuperMesh">
+<em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">SuperMesh</code><a class="headerlink" href="#ifm.SuperMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class providing access to FEFLOW’s Supermesh.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.getSuperMesh" title="ifm.FeflowDoc.getSuperMesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">ifm.FeflowDoc.getSuperMesh</span></code></a></p>
+</div>
+<dl class="method">
+<dt id="ifm.SuperMesh.addElement">
+<code class="descname">addElement</code><span class="sig-paren">(</span><em>int type</em>, <em>double(ndm) points[]</em><span class="optional">[</span>, <em>IfmSuperElement parent</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.addElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add element to Supermesh instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type</strong> (<em>int</em>) – {ifm.Enum.SMH_SHAPE_COMPOSED, ifm.Enum.SMH_SHAPE_LINE, ifm.Enum.SMH_SHAPE_POINT, ifm.Enum.SMH_SHAPE_POLYGON}</li>
+<li><strong>points</strong><strong>[</strong><strong>]</strong> (<em>double</em><em>(</em><em>ndm</em><em>)</em>) – list of x-y tuples (2D)</li>
+<li><strong>parent</strong> (<em>IfmSuperElement</em>) – optional parameter representing the parent Supermesh instance (see example below)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">model (Supermesh) to which elements are added</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">IfmSuperElement parent</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_COMPOSED</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_NAME</span><span class="p">,</span> <span class="s1">&#39;Model&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_POLYGON</span><span class="p">,</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="o">-</span><span class="mf">1367.663</span><span class="p">,</span> <span class="mf">5148.085</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span>  <span class="mf">1043.806</span><span class="p">,</span> <span class="mf">2229.747</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span>  <span class="mf">2260.424</span><span class="p">,</span> <span class="mf">2679.999</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span>  <span class="mf">4037.446</span><span class="p">,</span> <span class="mf">4728.510</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span>  <span class="mf">3092.925</span><span class="p">,</span> <span class="mf">5465.932</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span>  <span class="mf">1568.908</span><span class="p">,</span> <span class="mf">6655.788</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_POLYGON</span><span class="p">,</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">7387.993</span><span class="p">,</span> <span class="mf">7202.014</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">5987.235</span><span class="p">,</span> <span class="mf">8924.258</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">1568.908</span><span class="p">,</span> <span class="mf">6655.788</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">3092.925</span><span class="p">,</span> <span class="mf">5465.932</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">6055.706</span><span class="p">,</span> <span class="mf">6663.499</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">7387.993</span><span class="p">,</span> <span class="mf">7202.014</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">],</span> <span class="n">model</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_LINE</span><span class="p">,</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">3012.709</span><span class="p">,</span> <span class="mf">1783.521</span><span class="p">),</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">6084.442</span><span class="p">,</span> <span class="mf">2817.569</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_NAME</span><span class="p">,</span> <span class="s1">&#39;DFE&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_POINT</span><span class="p">,</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(</span> <span class="mf">4381.303</span><span class="p">,</span> <span class="mf">6953.764</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_NAME</span><span class="p">,</span> <span class="s1">&#39;Obs&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">addElement</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_SHAPE_POINT</span><span class="p">,</span> <span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">((</span> <span class="mf">5000.0</span><span class="p">,</span> <span class="mf">5000.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="p">(])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_NAME</span><span class="p">,</span> <span class="s1">&#39;Well&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.addSlice">
+<code class="descname">addSlice</code><span class="sig-paren">(</span><em>int type, object args[, [Slice|int] template]</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.addSlice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add Slice to the Supermesh instance. Note that elevation can be defined as constant, as distance from top/bottom Slice or from Map. Only “.dat”, “.shp” maps can be used at the moment.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type</strong> (<em>int</em>) – {<cite>ifm.Enum.SMH_ELEV_CONSTANT</cite>, <cite>ifm.Enum.SMH_ELEV_DISTBOTTOM</cite>, <cite>ifm.Enum.SMH_ELEV_DISTTOP</cite>, <cite>ifm.Enum.SMH_ELEV_MAP</cite>}</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">=</span><span class="n">doc</span><span class="o">.</span><span class="n">getSuperMesh</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interpol</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">getInterpolation</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_REGIO_KRIGING</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addSlice</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_CONSTANT</span><span class="p">,</span> <span class="mf">10.</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addSlice</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_DISTTOP</span><span class="p">,</span> <span class="mf">1.</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addSlice</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_MAP</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;elev.shp&#39;</span><span class="p">,</span> <span class="n">interpol</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.generateMesh">
+<code class="descname">generateMesh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.generateMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>FemMesh smh.generateMesh([MeshGenerator gen])</p>
+<p>Method of Supermesh object to generate mesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gen</strong><strong> (</strong><strong>optional</strong><strong>)</strong> (<em>MeshGenerator</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">FemMesh object</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span> <span class="o">=</span> <span class="n">smh</span><span class="o">.</span><span class="n">getMeshGenerator</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_GEN_TRIANGLE</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Option 1:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">(</span><span class="n">gen</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Option 2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">getRootElement</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_MESHGEN</span><span class="p">,</span> <span class="n">gen</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_PROPOSED</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getCoor">
+<code class="descname">getCoor</code><span class="sig-paren">(</span><em>int node</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getCoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects to get coordinates of a Supermesh node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>(x, y)</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Coordinates of the node</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getElement">
+<code class="descname">getElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects to obtain a Supermesh Element.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">smh</span><span class="o">.</span><span class="n">getElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># obtain first composed element</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">getChildElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_MATERIAL</span><span class="p">,</span> <span class="s1">&#39;coarse sand&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">getChildElement</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s1">&#39;Material&#39;</span><span class="p">,</span> <span class="s1">&#39;fine sand&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getElements">
+<code class="descname">getElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>SuperElement[] elem.getElements([SuperElement parent])</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong><strong> (</strong><strong>optional</strong><strong>)</strong> (<em>SuperElement</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>SuperElement[]</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Array of SuperElements</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getExtent">
+<code class="descname">getExtent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getExtent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects to get the extent of the supermesh.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">((xmin,ymin),(xmax,ymax))</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getInterpolation">
+<code class="descname">getInterpolation</code><span class="sig-paren">(</span><em>string method</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getInterpolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects which returns an IFM “Interpolation” object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>method</strong> (<em>string</em>) – Name of the interpolation method to be returned.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">IFM Interpolation Object</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">interp</span> <span class="o">=</span> <span class="n">smh</span><span class="o">.</span><span class="n">getInterpolation</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_REGIO_KRIGING</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">interp</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Output</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">Interpolation</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Name</span><span class="p">:</span> <span class="n">Kriging</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Neighbors</span><span class="p">:</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Logarithmic</span><span class="p">:</span> <span class="n">FALSE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Type</span><span class="p">:</span> <span class="n">Simple</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getInterpolations">
+<code class="descname">getInterpolations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getInterpolations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects that returns a list of available interpolation methods.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">List of IFM Interpolation Objects</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">smh</span><span class="o">.</span><span class="n">getInterpolations</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Output</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">Interpolation</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Name</span><span class="p">:</span> <span class="n">Inverse</span> <span class="n">Distance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Neighbors</span><span class="p">:</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Exponent</span><span class="p">:</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Logarithmic</span><span class="p">:</span> <span class="n">FALSE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">Interpolation</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Name</span><span class="p">:</span> <span class="n">Akima</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Interpolation</span> <span class="n">Type</span><span class="p">:</span> <span class="n">Cubic</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Neighbors</span><span class="p">:</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Over</span><span class="o">-/</span><span class="n">Under</span> <span class="n">Shooting</span><span class="p">:</span> <span class="mi">50</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Logarithmic</span><span class="p">:</span> <span class="n">FALSE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">Interpolation</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Name</span><span class="p">:</span> <span class="n">Kriging</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Neighbors</span><span class="p">:</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Logarithmic</span><span class="p">:</span> <span class="n">FALSE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Type</span><span class="p">:</span> <span class="n">Simple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getMeshGenerator">
+<code class="descname">getMeshGenerator</code><span class="sig-paren">(</span><em>int id</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getMeshGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects that returns a Mesh generator object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id</strong> (<em>int</em>) – {<cite>ifm.Enum.SMH_GEN_TRIANGLE</cite>, <cite>ifm.Enum.SMH_GEN_ADVANCING_FRONT</cite>, <cite>ifm.Enum.SMH_GEN_GRIDBUILDER</cite>}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Mesh generator object</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">=</span><span class="n">smh</span><span class="o">.</span><span class="n">getMeshGenerator</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_GEN_TRIANGLE</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Refine Lines&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Line Gradation&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Line Target Size&quot;</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Refine Points&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Point Gradation&quot;</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Point Target Size&quot;</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="s2">&quot;Minimum Angle&quot;</span><span class="p">,</span> <span class="s1">&#39;30 [DEG]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getMeshGenerators">
+<code class="descname">getMeshGenerators</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getMeshGenerators" title="Permalink to this definition">¶</a></dt>
+<dd><p>MeshGenerator[] smh.getMeshGenerators()</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>MeshGenerator[]</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Array of MeshGenerator objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getNumberOfElements">
+<code class="descname">getNumberOfElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getNumberOfElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>int smh.getNumberOfElements()</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Ne</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number of Supermesh Elements (Polygons + Lines + Points)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getNumberOfLayers">
+<code class="descname">getNumberOfLayers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getNumberOfLayers" title="Permalink to this definition">¶</a></dt>
+<dd><p>int smh.getNumberOfLayers()</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Nl</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number of Layers of the supermesh</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getNumberOfNodes">
+<code class="descname">getNumberOfNodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getNumberOfNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>int smh.getNumberOfNodes()</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Nn</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number of Nodes of the supermesh</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getNumberOfSlices">
+<code class="descname">getNumberOfSlices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getNumberOfSlices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>int Ns</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Number of Slices of the supermesh</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getOrigin">
+<code class="descname">getOrigin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getOrigin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>(xorg,yorg)</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Origin coordinates</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getRootElement">
+<code class="descname">getRootElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getRootElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects that returns the Supermesh Root Element, including all the other elements</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">root</span> <span class="o">=</span> <span class="n">smh</span><span class="o">.</span><span class="n">getRootElement</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_PROPOSED</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">root</span><span class="o">.</span><span class="n">setPropertyValue</span><span class="p">(</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_PROP_ELEM_MATERIAL</span><span class="p">,</span> <span class="s1">&#39;coarse sand&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getSlice">
+<code class="descname">getSlice</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getSlice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slice smh.getSlice(int idx)</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>idx</strong> (<em>int</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Slice object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.getSlices">
+<code class="descname">getSlices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.getSlices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slice[] smh.getSlices()</p>
+<p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><strong>Slice[]</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">Array of Slice objects</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.insertSlice">
+<code class="descname">insertSlice</code><span class="sig-paren">(</span><em>int where, int type, object args[, Slice template])</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.insertSlice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>where</strong> (<em>int</em>) – Position where to insert the Slice. By default: positions go from 0 (top Slice) to nSlices-1 (bottom Slice)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addSlice</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_CONSTANT</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">addSlice</span><span class="p">(</span><span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_CONSTANT</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">insertSlice</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">ifm</span><span class="o">.</span><span class="n">Enum</span><span class="o">.</span><span class="n">SMH_ELEV_DISTBOTTOM</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">smh</span><span class="o">.</span><span class="n">getSlices</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Output</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">SmhSlice</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">slice</span><span class="p">:</span>   <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">:</span>    <span class="n">constant</span> <span class="n">elevation</span><span class="p">:</span> <span class="n">Z</span><span class="o">=</span><span class="mi">20</span> <span class="p">[</span><span class="n">m</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">movable</span><span class="p">:</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">SmhSlice</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">slice</span><span class="p">:</span>   <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">:</span>    <span class="n">constant</span> <span class="n">distance</span> <span class="n">to</span> <span class="n">bottom</span> <span class="nb">slice</span><span class="p">:</span> <span class="n">DIST</span><span class="o">=</span><span class="mi">3</span> <span class="p">[</span><span class="n">m</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">movable</span><span class="p">:</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[</span> <span class="n">IFM</span> <span class="n">SmhSlice</span> <span class="n">Object</span> <span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">slice</span><span class="p">:</span>   <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">:</span>    <span class="n">constant</span> <span class="n">elevation</span><span class="p">:</span> <span class="n">Z</span><span class="o">=</span><span class="mi">10</span> <span class="p">[</span><span class="n">m</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">movable</span><span class="p">:</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.removeSlice">
+<code class="descname">removeSlice</code><span class="sig-paren">(</span><em>int slice</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.removeSlice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>slice</strong> (<em>int</em>) – </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.SuperMesh.setOrigin">
+<code class="descname">setOrigin</code><span class="sig-paren">(</span><em>xorg</em>, <em>yorg</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh.setOrigin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of supermesh objects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>xorg</strong> (<em>double</em>) – </li>
+<li><strong>yorg</strong> (<em>double</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
 <div class="section" id="ifm-wellmanager">
 <h2>ifm.WellManager<a class="headerlink" href="#ifm-wellmanager" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
@@ -2824,7 +3529,7 @@ including including additional sub-types if set (<cite>ifm.Enum.WMT_MASS_TRANSPO
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021 DHI.</p>
+    <p>&#169; Copyright 2023 DHI.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

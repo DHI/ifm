@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 8.02 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 8.100 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -31,7 +31,7 @@
             ifm
           </a>
               <div class="version">
-                8.0
+                8.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -81,8 +81,8 @@
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Python &gt;= 3.6</li>
-<li>FEFLOW 8.0</li>
+<li>Python &gt;= 3.9</li>
+<li>FEFLOW 8.1</li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -105,13 +105,13 @@
 <span class="gp">&gt;&gt;&gt; </span> <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">getNumberOfNodes</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>The package resides in the C:Program FilesDHI2022FEFLOW 8.0python file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+<p>The package resides in the “C:\Program Files\DHI\2024\FEFLOW 8.1\python” file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.</p>
 <p>Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is .
 Use <cite>ifm.getKernelVersion()</cite> to make sure the desired FEFLOW version has been loaded.</p>
 </div>
-<div class="section" id="inline-python-skripts">
-<h2>Inline Python Skripts<a class="headerlink" href="#inline-python-skripts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inline-python-scripts">
+<h2>Inline Python Scripts<a class="headerlink" href="#inline-python-scripts" title="Permalink to this headline">¶</a></h2>
 <p>FEFLOW Python scripting capabilities are activated via Global Settings options from the  Tools menu.
 The option  Enable Scripting is part of the section Tool Properties. Once this scripting option has been activated,
 FEFLOW will remember the user-defined setting and provide access to the  Scripting menu.</p>
@@ -141,8 +141,10 @@ Non standard-librarys can be imported from a separate environment. Experience sh
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-nodalbudget">ifm.NodalBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-parameter">ifm.Parameter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-particletracer">ifm.ParticleTracer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-problemdefinition">ifm.ProblemDefinition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-subdomainbudget">ifm.SubdomainBudget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-subdomaintransferbudget">ifm.SubdomainTransferBudget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-supermesh">ifm.SuperMesh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api_objects.html#ifm-wellmanager">ifm.WellManager</a></li>
 </ul>
 </li>
@@ -154,6 +156,7 @@ Non standard-librarys can be imported from a separate environment. Experience sh
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="new_release.html">New Features / Version History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-8-1">New API features in FEFLOW 8.1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-8-0">New API features in FEFLOW 8.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-7-5">New API features in FEFLOW 7.5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-7-4">New API features in FEFLOW 7.4</a></li>
@@ -182,7 +185,7 @@ Non standard-librarys can be imported from a separate environment. Experience sh
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021 DHI.</p>
+    <p>&#169; Copyright 2023 DHI.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
