@@ -48,6 +48,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">IFM Classes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-budget">ifm.Budget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-budgetresultex">ifm.BudgetResultEx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-femmesh">ifm.FemMesh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-lookuptable">ifm.LookupTable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-mlwinfo">ifm.MLWInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ifm-nodalbudget">ifm.NodalBudget</a></li>
@@ -106,6 +107,658 @@
 <dt id="ifm.BudgetResultEx">
 <em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">BudgetResultEx</code><a class="headerlink" href="#ifm.BudgetResultEx" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+</div>
+<div class="section" id="ifm-femmesh">
+<h2>ifm.FemMesh<a class="headerlink" href="#ifm-femmesh" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="ifm.FemMesh">
+<em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">FemMesh</code><a class="headerlink" href="#ifm.FemMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>The FemMesh class provides a mesh to build a FEFLOW cross-section. Such mesh does not coincide with the mesh already saved in the FEFLOW model.
+It can be obtained by calling the <cite>ifm.FeflowDoc.createMeshFromSurfaceLine</cite> method.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="api_doc.html#ifm.FeflowDoc.createMeshFromSurfaceLine" title="ifm.FeflowDoc.createMeshFromSurfaceLine"><code class="xref py py-class docutils literal notranslate"><span class="pre">ifm.FeflowDoc.createMeshFromSurfaceLine</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">femmesh</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">createMeshFromSurfaceLine</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="ifm.FemMesh.getCoor">
+<code class="descname">getCoor</code><span class="sig-paren">(</span><em>int node</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getCoor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the coordinates of nodes in newly created mesh</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> (<em>int</em>) – Node ID to process</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">X, Y, Z coordinates
+Physical unit is [m]</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float (x3)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getDualNodes">
+<code class="descname">getDualNodes</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getDualNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getExtent">
+<code class="descname">getExtent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getExtent" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">xmin,xmax,ymin,ymax,zmin,zmax
+Physical unit is [m]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">double (x6)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getLayerOffset">
+<code class="descname">getLayerOffset</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getLayerOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNodeFromDual">
+<code class="descname">getNodeFromDual</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNodeFromDual" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNodes">
+<code class="descname">getNodes</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int</strong> – Element number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfDimensions">
+<code class="descname">getNumberOfDimensions</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfDimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfDualNodes">
+<code class="descname">getNumberOfDualNodes</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfDualNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfElementNodes">
+<code class="descname">getNumberOfElementNodes</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfElementNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfElementNodes2D">
+<code class="descname">getNumberOfElementNodes2D</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfElementNodes2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfElements">
+<code class="descname">getNumberOfElements</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfElementsPerLayer">
+<code class="descname">getNumberOfElementsPerLayer</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfElementsPerLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfLayers">
+<code class="descname">getNumberOfLayers</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfLayers" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfNodes">
+<code class="descname">getNumberOfNodes</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfNodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfNodesPerElement">
+<code class="descname">getNumberOfNodesPerElement</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfNodesPerElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfNodesPerElement2D">
+<code class="descname">getNumberOfNodesPerElement2D</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfNodesPerElement2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfNodesPerSlice">
+<code class="descname">getNumberOfNodesPerSlice</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfNodesPerSlice" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getNumberOfSlices">
+<code class="descname">getNumberOfSlices</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getNumberOfSlices" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getOrigin">
+<code class="descname">getOrigin</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getOrigin" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getSliceOffset">
+<code class="descname">getSliceOffset</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getSliceOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getValue">
+<code class="descname">getValue</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.getValues">
+<code class="descname">getValues</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.getValues" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.hasHexahedra">
+<code class="descname">hasHexahedra</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.hasHexahedra" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.hasMixedElementTypes">
+<code class="descname">hasMixedElementTypes</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.hasMixedElementTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.hasTetrahedra">
+<code class="descname">hasTetrahedra</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.hasTetrahedra" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.isContinuous">
+<code class="descname">isContinuous</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.isContinuous" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.isParabolic">
+<code class="descname">isParabolic</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.isParabolic" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.FemMesh.isPrismatic">
+<code class="descname">isPrismatic</code><span class="sig-paren">(</span><em>xxx</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.FemMesh.isPrismatic" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Help)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>of parameters</strong><strong>)</strong> (<em>(</em><em>list</em>) – (explanation of parameter)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(explanation of returns)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(list of returns)</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
 
 </div>
 <div class="section" id="ifm-lookuptable">

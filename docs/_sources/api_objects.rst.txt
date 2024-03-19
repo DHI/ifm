@@ -11,6 +11,11 @@ ifm.BudgetResultEx
 .. autoclass:: ifm.BudgetResultEx
 	:members:
 
+ifm.FemMesh
+---------------
+.. autoclass:: ifm.FemMesh
+	:members:
+
 ifm.LookupTable
 ---------------
 .. autoclass:: ifm.LookupTable

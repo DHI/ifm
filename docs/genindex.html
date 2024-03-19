@@ -191,6 +191,8 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.createFracElement2">createFracElement2() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_doc.html#ifm.FeflowDoc.createMeshFromSurfaceLine">createMeshFromSurfaceLine() (ifm.FeflowDoc method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.createNodalRefDistr">createNodalRefDistr() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.createParticleTracer">createParticleTracer() (ifm.FeflowDoc method)</a>
@@ -257,16 +259,18 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc">FeflowDoc (class in ifm)</a>
 </li>
+      <li><a href="api_objects.html#ifm.FemMesh">FemMesh (class in ifm)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.findElementAtXY">findElementAtXY() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.findElementAtXYZ">findElementAtXYZ() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.LookupTable.findMaterial">findMaterial() (ifm.LookupTable method)</a>
 </li>
-      <li><a href="api_doc.html#ifm.FeflowDoc.findNodeAtXY">findNodeAtXY() (ifm.FeflowDoc method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api_doc.html#ifm.FeflowDoc.findNodeAtXY">findNodeAtXY() (ifm.FeflowDoc method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.findNodeAtXYZ">findNodeAtXYZ() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.findObsByLabel">findObsByLabel() (ifm.FeflowDoc method)</a>
@@ -449,8 +453,12 @@
         <li><a href="api_objects.html#ifm.SubdomainTransferBudget.getConvOut">(ifm.SubdomainTransferBudget method)</a>
 </li>
       </ul></li>
-      <li><a href="api_objects.html#ifm.SuperMesh.getCoor">getCoor() (ifm.SuperMesh method)</a>
+      <li><a href="api_objects.html#ifm.FemMesh.getCoor">getCoor() (ifm.FemMesh method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh.getCoor">(ifm.SuperMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getCurrentLayerNumber">getCurrentLayerNumber() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getCurrentSliceNumber">getCurrentSliceNumber() (ifm.FeflowDoc method)</a>
@@ -483,6 +491,8 @@
       </ul></li>
       <li><a href="api_kernel.html#ifm.ifm.getDocument">getDocument() (ifm.ifm method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.FemMesh.getDualNodes">getDualNodes() (ifm.FemMesh method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getElement">getElement() (ifm.FeflowDoc method)</a>
 
       <ul>
@@ -507,6 +517,8 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getElementalRefDistrValues">getElementalRefDistrValues() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_doc.html#ifm.FeflowDoc.getElementCentroid">getElementCentroid() (ifm.FeflowDoc method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getElementDiameter">getElementDiameter() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.SuperMesh.getElements">getElements() (ifm.SuperMesh method)</a>
@@ -515,8 +527,12 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getExchangeThicknessAtNode3D">getExchangeThicknessAtNode3D() (ifm.FeflowDoc method)</a>
 </li>
-      <li><a href="api_objects.html#ifm.SuperMesh.getExtent">getExtent() (ifm.SuperMesh method)</a>
+      <li><a href="api_objects.html#ifm.FemMesh.getExtent">getExtent() (ifm.FemMesh method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh.getExtent">(ifm.SuperMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getExtents">getExtents() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getExtentX">getExtentX() (ifm.FeflowDoc method)</a>
@@ -656,6 +672,8 @@
       <li><a href="api_kernel.html#ifm.ifm.getKernelRevision">getKernelRevision() (ifm.ifm method)</a>
 </li>
       <li><a href="api_kernel.html#ifm.ifm.getKernelVersion">getKernelVersion() (ifm.ifm method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.getLayerOffset">getLayerOffset() (ifm.FemMesh method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getLoadVersion">getLoadVersion() (ifm.FeflowDoc method)</a>
 </li>
@@ -797,8 +815,6 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMatUnsatFittingExponent3">getMatUnsatFittingExponent3() (ifm.FeflowDoc method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMatUnsatFittingExponent3DryingCurve">getMatUnsatFittingExponent3DryingCurve() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMatUnsatFittingExponentDryingCurve">getMatUnsatFittingExponentDryingCurve() (ifm.FeflowDoc method)</a>
@@ -815,6 +831,8 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMatYConductivityValue3D">getMatYConductivityValue3D() (ifm.FeflowDoc method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMatZConductivityValue3D">getMatZConductivityValue3D() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMaximumNumberOfGroups">getMaximumNumberOfGroups() (ifm.FeflowDoc method)</a>
@@ -824,6 +842,8 @@
       <li><a href="api_objects.html#ifm.SuperMesh.getMeshGenerators">getMeshGenerators() (ifm.SuperMesh method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMeshType">getMeshType() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_doc.html#ifm.FeflowDoc.getMetaData">getMetaData() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMoistureContentValueOfObsIdAtCurrentTime">getMoistureContentValueOfObsIdAtCurrentTime() (ifm.FeflowDoc method)</a>
 </li>
@@ -899,6 +919,10 @@
       </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNode">getNode() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.FemMesh.getNodeFromDual">getNodeFromDual() (ifm.FemMesh method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.getNodes">getNodes() (ifm.FemMesh method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOf1DFractureElements">getNumberOf1DFractureElements() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOf2DQuadrilateralFractureElements">getNumberOf2DQuadrilateralFractureElements() (ifm.FeflowDoc method)</a>
@@ -910,8 +934,14 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfBorders">getNumberOfBorders() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfDimensions">getNumberOfDimensions() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfDimensions">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_kernel.html#ifm.ifm.getNumberOfDocuments">getNumberOfDocuments() (ifm.ifm method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.getNumberOfDualNodes">getNumberOfDualNodes() (ifm.FemMesh method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfEdges">getNumberOfEdges() (ifm.FeflowDoc method)</a>
 </li>
@@ -920,22 +950,38 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfElementalRefDistr">getNumberOfElementalRefDistr() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfElementNodes">getNumberOfElementNodes() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfElementNodes">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfElementNodes2D">getNumberOfElementNodes2D() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfElementNodes2D">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfElements">getNumberOfElements() (ifm.FeflowDoc method)</a>
 
       <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfElements">(ifm.FemMesh method)</a>
+</li>
         <li><a href="api_objects.html#ifm.SuperMesh.getNumberOfElements">(ifm.SuperMesh method)</a>
 </li>
       </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfElementsPerLayer">getNumberOfElementsPerLayer() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfElementsPerLayer">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfFaces">getNumberOfFaces() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfLayers">getNumberOfLayers() (ifm.FeflowDoc method)</a>
 
       <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfLayers">(ifm.FemMesh method)</a>
+</li>
         <li><a href="api_objects.html#ifm.SuperMesh.getNumberOfLayers">(ifm.SuperMesh method)</a>
 </li>
       </ul></li>
@@ -950,20 +996,36 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfNodes">getNumberOfNodes() (ifm.FeflowDoc method)</a>
 
       <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfNodes">(ifm.FemMesh method)</a>
+</li>
         <li><a href="api_objects.html#ifm.SuperMesh.getNumberOfNodes">(ifm.SuperMesh method)</a>
 </li>
       </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfNodesPerElement">getNumberOfNodesPerElement() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfNodesPerElement">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfNodesPerElement2D">getNumberOfNodesPerElement2D() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfNodesPerElement2D">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfNodesPerSlice">getNumberOfNodesPerSlice() (ifm.FeflowDoc method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfNodesPerSlice">(ifm.FemMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfSelections">getNumberOfSelections() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfSlices">getNumberOfSlices() (ifm.FeflowDoc method)</a>
 
       <ul>
+        <li><a href="api_objects.html#ifm.FemMesh.getNumberOfSlices">(ifm.FemMesh method)</a>
+</li>
         <li><a href="api_objects.html#ifm.SuperMesh.getNumberOfSlices">(ifm.SuperMesh method)</a>
 </li>
       </ul></li>
@@ -979,8 +1041,12 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getObsLabel">getObsLabel() (ifm.FeflowDoc method)</a>
 </li>
-      <li><a href="api_objects.html#ifm.SuperMesh.getOrigin">getOrigin() (ifm.SuperMesh method)</a>
+      <li><a href="api_objects.html#ifm.FemMesh.getOrigin">getOrigin() (ifm.FemMesh method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh.getOrigin">(ifm.SuperMesh method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getOriginX">getOriginX() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getOriginY">getOriginY() (ifm.FeflowDoc method)</a>
@@ -1161,6 +1227,8 @@
 </li>
       <li><a href="api_objects.html#ifm.SuperMesh.getSlice">getSlice() (ifm.SuperMesh method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.FemMesh.getSliceOffset">getSliceOffset() (ifm.FemMesh method)</a>
+</li>
       <li><a href="api_objects.html#ifm.SuperMesh.getSlices">getSlices() (ifm.SuperMesh method)</a>
 </li>
       <li><a href="api_objects.html#ifm.WellManager.getSnapDistance">getSnapDistance() (ifm.WellManager method)</a>
@@ -1279,6 +1347,12 @@
 </li>
       <li><a href="api_objects.html#ifm.ProblemDefinition.getUpwinding">getUpwinding() (ifm.ProblemDefinition method)</a>
 </li>
+      <li><a href="api_doc.html#ifm.FeflowDoc.getUserMetaData">getUserMetaData() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.getValue">getValue() (ifm.FemMesh method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.getValues">getValues() (ifm.FemMesh method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getViscosityDependency">getViscosityDependency() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.WellManager.getWarning">getWarning() (ifm.WellManager method)</a>
@@ -1327,7 +1401,15 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api_objects.html#ifm.FemMesh.hasHexahedra">hasHexahedra() (ifm.FemMesh method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.hasMixedElementTypes">hasMixedElementTypes() (ifm.FemMesh method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_objects.html#ifm.LookupTable.hasProperty">hasProperty() (ifm.LookupTable method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.hasTetrahedra">hasTetrahedra() (ifm.FemMesh method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -1349,6 +1431,8 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.isBccMassSet">isBccMassSet() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.FemMesh.isContinuous">isContinuous() (ifm.FemMesh method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.isDivergenceFormTransport">isDivergenceFormTransport() (ifm.FeflowDoc method)</a>
@@ -1362,6 +1446,10 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.isMultiLayerWellAttrValid">isMultiLayerWellAttrValid() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.isNodeInGroup">isNodeInGroup() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.isParabolic">isParabolic() (ifm.FemMesh method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.FemMesh.isPrismatic">isPrismatic() (ifm.FemMesh method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.isVelocityFieldPresent">isVelocityFieldPresent() (ifm.FeflowDoc method)</a>
 </li>
@@ -1416,6 +1504,8 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_objects.html#ifm.Parameter">Parameter (class in ifm)</a>
+</li>
+      <li><a href="api_doc.html#ifm.FeflowDoc.parseUserMetaData">parseUserMetaData() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.ParticleTracer">ParticleTracer (class in ifm)</a>
 </li>
@@ -2037,7 +2127,7 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setUnsatWeightingType">setUnsatWeightingType() (ifm.FeflowDoc method)</a>
 </li>
-      <li><a href="api_doc.html#ifm.FeflowDoc.setUserData">setUserData() (ifm.FeflowDoc method)</a>
+      <li><a href="api_doc.html#ifm.FeflowDoc.setUserMetaData">setUserMetaData() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setViscosityDependency">setViscosityDependency() (ifm.FeflowDoc method)</a>
 </li>

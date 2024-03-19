@@ -56,7 +56,7 @@ and referred to the current document instance (either FEM file or DAC file) load
 Table below shows an example about the operation differences between an external Python interpreter and the  Scripting menu. 
 The simple example just print the total number of nodes in the finite-element mesh.
 
-http://www.feflow.info/html/help74/feflow/14_References/GUI/Menus/menu_scripting.html
+https://download.feflow.com/html/help81/feflow/14_References/GUI/Menus/menu_scripting.html
 
 
 * Note: The in-built Python interpreter has standard libs only. 
