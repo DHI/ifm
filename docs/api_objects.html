@@ -3867,7 +3867,7 @@ was created by calling <cite>ifm.FeflowDoc.budgetComputeSubdomainTransfer</cite>
 </div>
 <dl class="method">
 <dt id="ifm.WellManager.applyOperations">
-<code class="descname">applyOperations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.WellManager.applyOperations" title="Permalink to this definition">¶</a></dt>
+<code class="descname">applyOperations</code><span class="sig-paren">(</span><em>True</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.WellManager.applyOperations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply changes to the current Well Manager instance. If this function is not called, changes are discarded.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -3998,6 +3998,22 @@ list(3-float-tuple) represents a polyline described as 3-float-tuples (global x/
 <span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.WellManager.getOverwriteConflicts">
+<code class="descname">getOverwriteConflicts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.WellManager.getOverwriteConflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Well Manager. Returns True if the Well Manager is allowed to overwrite boundary conditions in conflict with Well position, False otherwise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if BC can be overwritten, False otherwise.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -4147,6 +4163,20 @@ including including additional sub-types if set (<cite>ifm.Enum.WMT_MASS_TRANSPO
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Str</strong> (<em>String</em>) – Well Manager in Xml format as string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ifm.WellManager.putOverwriteConflicts">
+<code class="descname">putOverwriteConflicts</code><span class="sig-paren">(</span><em>bool</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.WellManager.putOverwriteConflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method of Well Manager to set if the Well Manager is allowed to overwrite boundary conditions in conflict with Well position, or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bool</strong> – True to set that BC can be overwritten, False otherwise.</td>
 </tr>
 </tbody>
 </table>
