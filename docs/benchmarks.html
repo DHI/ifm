@@ -1,18 +1,21 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Examples &mdash; ifm 8.100 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+  <title>Examples &mdash; ifm 8.100 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=4ec90525"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -31,9 +34,6 @@
           <a href="index.html" class="icon icon-home">
             ifm
           </a>
-              <div class="version">
-                8.1
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -92,42 +92,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="examples">
-<span id="benchmarks"></span><h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="snippets">
-<h2>Snippets<a class="headerlink" href="#snippets" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="add-layer-information-to-exported-streamline-data">
-<h3>Add layer information to exported streamline data<a class="headerlink" href="#add-layer-information-to-exported-streamline-data" title="Permalink to this headline">¶</a></h3>
+  <section id="examples">
+<span id="benchmarks"></span><h1>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h1>
+<section id="snippets">
+<h2>Snippets<a class="headerlink" href="#snippets" title="Permalink to this heading"></a></h2>
+<section id="add-layer-information-to-exported-streamline-data">
+<h3>Add layer information to exported streamline data<a class="headerlink" href="#add-layer-information-to-exported-streamline-data" title="Permalink to this heading"></a></h3>
 <p>This script uses a shape-file containing the points of streamlines exported from a FEFLOW simulation and adds a column with the according layer number of each point.</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/examples/particle-tracing/find_layers_for_streamlines.ipynb">https://github.com/DHI/ifm/blob/master/examples/particle-tracing/find_layers_for_streamlines.ipynb</a></p>
-</div>
-<div class="section" id="changing-properties-of-discrete-feature-elements">
-<h3>Changing Properties of Discrete Feature Elements<a class="headerlink" href="#changing-properties-of-discrete-feature-elements" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="changing-properties-of-discrete-feature-elements">
+<h3>Changing Properties of Discrete Feature Elements<a class="headerlink" href="#changing-properties-of-discrete-feature-elements" title="Permalink to this heading"></a></h3>
 <p>A simple example to change properties of Discrete Features Elements in FEFLOW.
 It is used to turn DFE on or off during the simulation</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/examples/discrete-features-transient.ipynb">https://github.com/DHI/ifm/blob/master/examples/discrete-features-transient.ipynb</a></p>
-</div>
-<div class="section" id="changing-the-error-tolerance-at-runtime">
-<h3>Changing the Error Tolerance at Runtime<a class="headerlink" href="#changing-the-error-tolerance-at-runtime" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="changing-the-error-tolerance-at-runtime">
+<h3>Changing the Error Tolerance at Runtime<a class="headerlink" href="#changing-the-error-tolerance-at-runtime" title="Permalink to this heading"></a></h3>
 <p>Change the error tolerance at runtime showcasing its influence on FEFLOWs time stepping behavior.</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/examples/adjust_error-tolerance-from-timeseries.ipynb">https://github.com/DHI/ifm/blob/master/examples/adjust_error-tolerance-from-timeseries.ipynb</a></p>
-</div>
-<div class="section" id="implementing-the-mass-load-boundary-condition">
-<h3>Implementing the Mass-Load Boundary Condition<a class="headerlink" href="#implementing-the-mass-load-boundary-condition" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="implementing-the-mass-load-boundary-condition">
+<h3>Implementing the Mass-Load Boundary Condition<a class="headerlink" href="#implementing-the-mass-load-boundary-condition" title="Permalink to this heading"></a></h3>
 <p>This scripts implements a Cauchy Boundary Condition to specify total mass flux and hence inflowing concentration
 even if using the convective form of transport.</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb">https://github.com/DHI/ifm/blob/master/tutorials/mass-load-boundary-condition.ipynb</a></p>
-</div>
-<div class="section" id="evaluating-performances-for-different-threads-and-solvers">
-<h3>Evaluating performances for different threads and solvers<a class="headerlink" href="#evaluating-performances-for-different-threads-and-solvers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="evaluating-performances-for-different-threads-and-solvers">
+<h3>Evaluating performances for different threads and solvers<a class="headerlink" href="#evaluating-performances-for-different-threads-and-solvers" title="Permalink to this heading"></a></h3>
 <p>This scripts evaluates the computational performance of a given model for different number of threads and solver types.</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/examples/set-threads-solver-measure-runtime.ipynb">https://github.com/DHI/ifm/blob/master/examples/set-threads-solver-measure-runtime.ipynb</a></p>
-</div>
-</div>
-<div class="section" id="feflow-benchmarks">
-<h2>FEFLOW benchmarks<a class="headerlink" href="#feflow-benchmarks" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="heat-transport">
-<h3>Heat Transport<a class="headerlink" href="#heat-transport" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="feflow-benchmarks">
+<h2>FEFLOW benchmarks<a class="headerlink" href="#feflow-benchmarks" title="Permalink to this heading"></a></h2>
+<section id="heat-transport">
+<h3>Heat Transport<a class="headerlink" href="#heat-transport" title="Permalink to this heading"></a></h3>
 <div class="toctree-wrapper compound">
 </div>
 <p><strong>Domenico and Palciauskas (1973)</strong></p>
@@ -135,9 +135,9 @@ even if using the convective form of transport.</p>
 <p><a class="reference external" href="https://github.com/DHI/ifm/blob/master/benchmarks/domenico_palciauskas/domenico_palciauskas.ipynb">https://github.com/DHI/ifm/blob/master/benchmarks/domenico_palciauskas/domenico_palciauskas.ipynb</a></p>
 <p>We will add more benchmarks over time. Do you have a numeric benchmark you want us to publish here?
 Please don’t hesitate to contact us at <a class="reference external" href="mailto:mike&#46;de&#37;&#52;&#48;dhigroup&#46;com">mike<span>&#46;</span>de<span>&#64;</span>dhigroup<span>&#46;</span>com</a>!</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
