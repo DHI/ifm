@@ -1,21 +1,18 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Callbacks &mdash; ifm 8.100 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-
-  
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=4ec90525"></script>
-      <script src="_static/doctools.js?v=888ff710"></script>
-      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+  <title>Callbacks &mdash; ifm 8.100 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,6 +31,9 @@
           <a href="index.html" class="icon icon-home">
             ifm
           </a>
+              <div class="version">
+                8.1
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -46,30 +46,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api_kernel.html">IFM Kernel Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api_doc.html">IFM FEFLOW Model Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api_objects.html">IFM Classes</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Callbacks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ifm.callbacks"><code class="docutils literal notranslate"><span class="pre">callbacks</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.getTensor"><code class="docutils literal notranslate"><span class="pre">callbacks.getTensor()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.onTimeStepConstraint"><code class="docutils literal notranslate"><span class="pre">callbacks.onTimeStepConstraint()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postEnterSimulator"><code class="docutils literal notranslate"><span class="pre">callbacks.postEnterSimulator()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postFlowSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.postFlowSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postHeatSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.postHeatSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postLoadDocument"><code class="docutils literal notranslate"><span class="pre">callbacks.postLoadDocument()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postLoadTimeStep"><code class="docutils literal notranslate"><span class="pre">callbacks.postLoadTimeStep()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postMassSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.postMassSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postSaveDocument"><code class="docutils literal notranslate"><span class="pre">callbacks.postSaveDocument()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.postSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.postTimeStep"><code class="docutils literal notranslate"><span class="pre">callbacks.postTimeStep()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preEnterSimulator"><code class="docutils literal notranslate"><span class="pre">callbacks.preEnterSimulator()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preFlowSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.preFlowSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preHeatSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.preHeatSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preMassSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.preMassSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preSaveDocument"><code class="docutils literal notranslate"><span class="pre">callbacks.preSaveDocument()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preSimulation"><code class="docutils literal notranslate"><span class="pre">callbacks.preSimulation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ifm.callbacks.preTimeStep"><code class="docutils literal notranslate"><span class="pre">callbacks.preTimeStep()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Callbacks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="benchmarks.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="new_release.html">New Features / Version History</a></li>
@@ -99,376 +76,437 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="callbacks">
-<span id="id1"></span><h1>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this heading"></a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="ifm.callbacks">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">callbacks</span></span><a class="headerlink" href="#ifm.callbacks" title="Permalink to this definition"></a></dt>
+  <div class="section" id="callbacks">
+<span id="id1"></span><h1>Callbacks<a class="headerlink" href="#callbacks" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ifm.callbacks">
+<em class="property">class </em><code class="descclassname">ifm.</code><code class="descname">callbacks</code><a class="headerlink" href="#ifm.callbacks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Callback functions can be reimplemented to inject custom code into the model that is
 executed at spectific points in FEFLOWs simulation sequence.</p>
 <p class="rubric">Notes</p>
 <p>The Python API supports only a subset of the Callbacks available in the C++ API.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.getTensor">
-<span class="sig-name descname"><span class="pre">getTensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.getTensor" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.getTensor">
+<code class="descname">getTensor</code><span class="sig-paren">(</span><em>doc</em>, <em>time</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.getTensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>getTensor is called by FEFLOW if the option “General Anisotropy Defined By Tensor Expression”
 is active (Problem Settings &gt; Anisotropy Setting) to obtain the K-Tensor definition.</p>
 <p>It is usually set in the Anisotropy Settings in the FEFLOW GUI (“Edit Python Expression…”).</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>time</strong> (<em>float</em>) – The current absolute simuation time [days]</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>time</strong> (<em>float</em>) – The current absolute simuation time [days]</li>
 </ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Must return the hydraulic conductivity Tensor as a NxN array (nested lists),
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Must return the hydraulic conductivity Tensor as a NxN array (nested lists),
 where N is the number of dimensions:
 [[Kxx, Kxy, Kxz], [Kyx, Kyy, Kzz], [Kzx, Kzy, Kzz]]</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>[[int]]</p>
-</dd>
-</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">[[int]]</p>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">getTensors</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">getTensors</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="k">return</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.onTimeStepConstraint">
-<span class="sig-name descname"><span class="pre">onTimeStepConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proposed_time_step_length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.onTimeStepConstraint" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.onTimeStepConstraint">
+<code class="descname">onTimeStepConstraint</code><span class="sig-paren">(</span><em>doc</em>, <em>current_time</em>, <em>proposed_time_step_length</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.onTimeStepConstraint" title="Permalink to this definition">¶</a></dt>
 <dd><p>onTimeStepConstraint is called when the simulator determines the next time step.
 The current time as well as the proposed length of the time step are passed to
 this callback function.
 The proposed interval can be reduced due to the needs of the plug-in
 (adjusting to power function points, etc.).
 If the proposed interval is increased, a warning will appear.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>current_time</strong> (<em>float</em>) – current absolute simulation time</p></li>
-<li><p><strong>proposed_time_step_length</strong> (<em>float</em>) – time step length proposed by the predictor</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>current_time</strong> (<em>float</em>) – current absolute simulation time</li>
+<li><strong>proposed_time_step_length</strong> (<em>float</em>) – time step length proposed by the predictor</li>
 </ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Must return a float value with the (new) time step length!</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Must return a float value with the (new) time step length!</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">onTimeStepConstraint</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">current_time</span><span class="p">,</span> <span class="n">proposed_time_step_length</span><span class="p">):</span>
-<span class="gp">&gt;&gt;&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">onTimeStepConstraint</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">current_time</span><span class="p">,</span> <span class="n">proposed_time_step_length</span><span class="p">):</span>
+<span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># choose a fixed time step for a specified time period</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="k">if</span> <span class="n">current_time</span> <span class="o">&gt;=</span> <span class="mi">38990</span> <span class="ow">and</span> <span class="n">current_time</span> <span class="o">&lt;=</span> <span class="mi">39000</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>        <span class="n">proposed_time_step_length</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="gp">&gt;&gt;&gt;</span>
+<span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="k">return</span> <span class="n">proposed_time_step_length</span>
 </pre></div>
 </div>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postEnterSimulator">
-<span class="sig-name descname"><span class="pre">postEnterSimulator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postEnterSimulator" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postEnterSimulator">
+<code class="descname">postEnterSimulator</code><span class="sig-paren">(</span><em>doc</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postEnterSimulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostEnterSimulator is called immediately after the simulator has been started.
 Remind the difference to PreSimulation! Use the callback to raise graphical elements
 related to the simulation process (e.g. diagrams).
 You should implement OnLeaveSimulator also to hide the raised elements.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postFlowSimulation">
-<span class="sig-name descname"><span class="pre">postFlowSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postFlowSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postFlowSimulation">
+<code class="descname">postFlowSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postFlowSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostFlowSimulation is called immediately after solving the flow equations and
 allows the implementation of own functionality for properties and actions related
 to the flow problem after it has been solved.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postHeatSimulation">
-<span class="sig-name descname"><span class="pre">postHeatSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postHeatSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postHeatSimulation">
+<code class="descname">postHeatSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>energy</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postHeatSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostHeatSimulation is called immediately after solving the heat transport equations
 and allows the implementation of own functionality for properties and actions
 related to the heat transport problem after it has been solved.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>energy</strong> (<em>int</em>) – reserved for future use</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>energy</strong> (<em>int</em>) – reserved for future use</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postLoadDocument">
-<span class="sig-name descname"><span class="pre">postLoadDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filemode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileversion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postLoadDocument" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postLoadDocument">
+<code class="descname">postLoadDocument</code><span class="sig-paren">(</span><em>doc</em>, <em>filename</em>, <em>filetype</em>, <em>filemode</em>, <em>fileversion</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postLoadDocument" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostLoadDocument is called after loading the current FEM problem
 including all IFM plug-ins.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</p></li>
-<li><p><strong>filetype</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>3}</em>) – <p>type of file:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</li>
+<li><strong>filetype</strong> (<em>{1|2|3}</em>) – <p>type of file:</p>
 <blockquote>
-<div><p>1 = Supermesh file
+<div>1 = Supermesh file
 2 = FEM problem file
-3 = DAC results file</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>filemode</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>4</em><em>|</em><em>16}</em>) – <p>the file mode</p>
+3 = DAC results file</div></blockquote>
+</li>
+<li><strong>filemode</strong> (<em>{1|2|4|16}</em>) – <p>the file mode</p>
 <blockquote>
-<div><p>1 = binary
+<div>1 = binary
 2 = ASCII
 4 = DEMO data format (DHI use only)
 16 = binary with encryption
-32 = XML interchange format</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
-e.g., 7302 for FEFLOW 7.3 update 2 format.</p></li>
+32 = XML interchange format</div></blockquote>
+</li>
+<li><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
+e.g., 7302 for FEFLOW 7.3 update 2 format.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postLoadTimeStep">
-<span class="sig-name descname"><span class="pre">postLoadTimeStep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loaded_step_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulation_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postLoadTimeStep" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postLoadTimeStep">
+<code class="descname">postLoadTimeStep</code><span class="sig-paren">(</span><em>doc</em>, <em>loaded_step_number</em>, <em>simulation_time</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postLoadTimeStep" title="Permalink to this definition">¶</a></dt>
 <dd><p>postLoadTimeStep is called after loading a time step in a FEFLOW results (dac) file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>loaded_step_number</strong> (<em>int</em>) – number of the time step loaded</p></li>
-<li><p><strong>simulation_time</strong> (<em>float</em>) – absolute simulation time of the time step loaded.</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>loaded_step_number</strong> (<em>int</em>) – number of the time step loaded</li>
+<li><strong>simulation_time</strong> (<em>float</em>) – absolute simulation time of the time step loaded.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postMassSimulation">
-<span class="sig-name descname"><span class="pre">postMassSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">species</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postMassSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postMassSimulation">
+<code class="descname">postMassSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>species</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postMassSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostMassSimulation is called immediately after solving the mass transport equations
 and allows the implementation of own functionality for properties and actions
 related to the mass transport problem after it has been solved.
 The current species index is passed through the <cite>species</cite> argument.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>species</strong> (<em>int</em>) – the index of the species being processes (multi-species ID)</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>species</strong> (<em>int</em>) – the index of the species being processes (multi-species ID)</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postSaveDocument">
-<span class="sig-name descname"><span class="pre">postSaveDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filemode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileversion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postSaveDocument" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postSaveDocument">
+<code class="descname">postSaveDocument</code><span class="sig-paren">(</span><em>doc</em>, <em>filename</em>, <em>filetype</em>, <em>filemode</em>, <em>fileversion</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postSaveDocument" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostSaveDocument is called after saving the current FEM problem including all IFM plug-ins.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</p></li>
-<li><p><strong>filetype</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>3}</em>) – <p>type of file:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</li>
+<li><strong>filetype</strong> (<em>{1|2|3}</em>) – <p>type of file:</p>
 <blockquote>
-<div><p>1 = Supermesh file
+<div>1 = Supermesh file
 2 = FEM problem file
-3 = DAC results file</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>filemode</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>4</em><em>|</em><em>16}</em>) – <p>the file mode</p>
+3 = DAC results file</div></blockquote>
+</li>
+<li><strong>filemode</strong> (<em>{1|2|4|16}</em>) – <p>the file mode</p>
 <blockquote>
-<div><p>1 = binary
+<div>1 = binary
 2= ASCII
 4 = DEMO data format (DHI use only)
 16 = binary with encryption
-32 = XML interchange format</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
-e.g., 73002 for FEFLOW 7.3 update 2 format.</p></li>
+32 = XML interchange format</div></blockquote>
+</li>
+<li><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
+e.g., 73002 for FEFLOW 7.3 update 2 format.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postSimulation">
-<span class="sig-name descname"><span class="pre">postSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postSimulation">
+<code class="descname">postSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostSimulation is called after running the simulation time loop and allows the
 implementation of own postprocessing functionality or freeing of memory which
 has been additionally allocated during the plug-in run.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>phase</strong> (<em>int</em>) – reserved for future use.</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>phase</strong> (<em>int</em>) – reserved for future use.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.postTimeStep">
-<span class="sig-name descname"><span class="pre">postTimeStep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postTimeStep" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.postTimeStep">
+<code class="descname">postTimeStep</code><span class="sig-paren">(</span><em>doc</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.postTimeStep" title="Permalink to this definition">¶</a></dt>
 <dd><p>PostTimeStep is called at the end of a current time step and allows the
 implementation of own functionality for updating time-related properties
 and user-specific actions.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preEnterSimulator">
-<span class="sig-name descname"><span class="pre">preEnterSimulator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preEnterSimulator" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preEnterSimulator">
+<code class="descname">preEnterSimulator</code><span class="sig-paren">(</span><em>doc</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preEnterSimulator" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreEnterSimulator is called immediately before the simulator is going to be started.
 Remind the difference to PreSimulation! Use the callback to raise graphical elements
 related to the simulation process (e.g. diagrams).
 You should implement OnLeaveSimulator also to hide the raised elements.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preFlowSimulation">
-<span class="sig-name descname"><span class="pre">preFlowSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preFlowSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preFlowSimulation">
+<code class="descname">preFlowSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preFlowSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreFlowSimulation is called immediately before solving the flow equations and
 allows the implementation of own functionality for properties and actions related
 to the flow problem before it becomes solved.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>phase</strong> (<em>int</em>) – for future use only</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>phase</strong> (<em>int</em>) – for future use only</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preHeatSimulation">
-<span class="sig-name descname"><span class="pre">preHeatSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preHeatSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preHeatSimulation">
+<code class="descname">preHeatSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>energy</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preHeatSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreHeatSimulation is called immediately before solving the heat transport equations
 and allows the implementation of own functionality for properties and actions
 related to the heat transport problem before it becomes solved.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>energy</strong> (<em>int</em>) – reserved for future use</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>energy</strong> (<em>int</em>) – reserved for future use</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preMassSimulation">
-<span class="sig-name descname"><span class="pre">preMassSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">species</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preMassSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preMassSimulation">
+<code class="descname">preMassSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>species</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preMassSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreMassSimulation is called immediately before solving the mass transport equations
 and allows the implementation of own functionality for properties and actions
 related to the mass transport problem before it becomes solved.
 The current species index is passed through the <cite>species</cite> argument.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>species</strong> (<em>int</em>) – the index of the species being processes (multi-species ID)</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>species</strong> (<em>int</em>) – the index of the species being processes (multi-species ID)</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preSaveDocument">
-<span class="sig-name descname"><span class="pre">preSaveDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filemode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileversion</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preSaveDocument" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preSaveDocument">
+<code class="descname">preSaveDocument</code><span class="sig-paren">(</span><em>doc</em>, <em>filename</em>, <em>filetype</em>, <em>filemode</em>, <em>fileversion</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preSaveDocument" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreSaveDocument is called just before the current FEM problem is going to be saved.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</p></li>
-<li><p><strong>filetype</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>3}</em>) – <p>type of file:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>filename</strong> (<em>str</em>) – the original filename of the document loaded</li>
+<li><strong>filetype</strong> (<em>{1|2|3}</em>) – <p>type of file:</p>
 <blockquote>
-<div><p>1 = Supermesh file
+<div>1 = Supermesh file
 2 = FEM problem file
-3 = DAC results file</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>filemode</strong> (<em>{1</em><em>|</em><em>2</em><em>|</em><em>4</em><em>|</em><em>16}</em>) – <p>the file mode</p>
+3 = DAC results file</div></blockquote>
+</li>
+<li><strong>filemode</strong> (<em>{1|2|4|16}</em>) – <p>the file mode</p>
 <blockquote>
-<div><p>1 = binary
+<div>1 = binary
 2= ASCII
 4 = DEMO data format (DHI use only)
 16 = binary with encryption
-32 = XML interchange format</p>
-</div></blockquote>
-</p></li>
-<li><p><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
-e.g., 73002 for FEFLOW 7.3 update 2 format.</p></li>
+32 = XML interchange format</div></blockquote>
+</li>
+<li><strong>fileversion</strong> (<em>int</em>) – current or target file version in decimal format,
+e.g., 73002 for FEFLOW 7.3 update 2 format.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preSimulation">
-<span class="sig-name descname"><span class="pre">preSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preSimulation" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preSimulation">
+<code class="descname">preSimulation</code><span class="sig-paren">(</span><em>doc</em>, <em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preSimulation" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreSimulation is called before running the simulation time loop and allows the
 implementation of own preprocessing functionality or allocation of additional
 memory needed for the plug-in.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p></li>
-<li><p><strong>phase</strong> (<em>int</em>) – reserved for future use.</p></li>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</li>
+<li><strong>phase</strong> (<em>int</em>) – reserved for future use.</li>
 </ul>
-</dd>
-</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="ifm.callbacks.preTimeStep">
-<span class="sig-name descname"><span class="pre">preTimeStep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preTimeStep" title="Permalink to this definition"></a></dt>
+<dl class="method">
+<dt id="ifm.callbacks.preTimeStep">
+<code class="descname">preTimeStep</code><span class="sig-paren">(</span><em>doc</em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.callbacks.preTimeStep" title="Permalink to this definition">¶</a></dt>
 <dd><p>PreTimeStep is called at beginning of each time step and allows the
 implementation of own functionality for updating time-related properties
 and user-specific actions</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</p>
-</dd>
-</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>doc</strong> (<a class="reference internal" href="api_doc.html#ifm.FeflowDoc" title="ifm.FeflowDoc"><em>ifm.FeflowDoc</em></a>) – the calling FEFLOW model</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
 
-</section>
+</div>
 
 
            </div>
