@@ -3,6 +3,13 @@
 New Features / Version History
 ==============================
 
+New API features in FEFLOW 10.0
+-------------------------------
+* Access to new 3D Supermesh data structure
+* Access to Supermesh pre-processing workflows (e.g., Repair tool, Implicit modelling)
+* Support of map projections
+
+
 New API features in FEFLOW 8.1
 ------------------------------
 * Access to the Supermesh

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 8.100 documentation</title>
+  <title>ifm: Python API for FEFLOW Groundwater Modelling System &mdash; ifm 10.000 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -82,7 +82,7 @@
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Python &gt;= 3.9</p></li>
-<li><p>FEFLOW 8.1</p></li>
+<li><p>FEFLOW 10.0</p></li>
 </ul>
 </section>
 <section id="installation">
@@ -106,7 +106,7 @@
 <span class="gp">&gt;&gt;&gt; </span> <span class="nb">print</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">getNumberOfNodes</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>The package resides in the “C:\Program Files\DHI\2024\FEFLOW 8.1\python” file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+<p>The package resides in the “C:\Program Files\DHI\2025\FEFLOW 10.0\python” file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.</p>
 <p>Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is .
 Use <cite>ifm.getKernelVersion()</cite> to make sure the desired FEFLOW version has been loaded.</p>
@@ -121,7 +121,7 @@ The import of the ifm module is not required. The document variable, typically r
 and referred to the current document instance (either FEM file or DAC file) loaded in the FEFLOW Graphical Interface.</p>
 <p>Table below shows an example about the operation differences between an external Python interpreter and the  Scripting menu.
 The simple example just print the total number of nodes in the finite-element mesh.</p>
-<p><a class="reference external" href="https://download.feflow.com/html/help81/feflow/14_References/GUI/Menus/menu_scripting.html">https://download.feflow.com/html/help81/feflow/14_References/GUI/Menus/menu_scripting.html</a></p>
+<p><a class="reference external" href="https://download.feflow.com/html/help100/feflow/14_References/GUI/Menus/menu_scripting.html">https://download.feflow.com/html/help100/feflow/14_References/GUI/Menus/menu_scripting.html</a></p>
 <ul class="simple">
 <li><p>Note: The in-built Python interpreter has standard libs only.
 Non standard-librarys can be imported from a separate environment. Experience showed that installations from python.org is more stable than conda-environments.</p></li>
@@ -164,6 +164,7 @@ Non standard-librarys can be imported from a separate environment. Experience sh
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="new_release.html">New Features / Version History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-10-0">New API features in FEFLOW 10.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-8-1">New API features in FEFLOW 8.1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-8-0">New API features in FEFLOW 8.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="new_release.html#new-api-features-in-feflow-7-5">New API features in FEFLOW 7.5</a></li>
@@ -193,7 +194,7 @@ Non standard-librarys can be imported from a separate environment. Experience sh
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023 DHI.</p>
+    <p>&#169; Copyright 2024 DHI.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

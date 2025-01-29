@@ -12,7 +12,7 @@ Requirements
 ------------
 
 * Python >= 3.9
-* FEFLOW 8.1
+* FEFLOW 10.0
 
 Installation
 ------------
@@ -36,7 +36,7 @@ The most common way is to import ifm as a package in a Python script. This is us
     >>>  doc = ifm.loadDocument("myModel.fem")
     >>>  print(doc.getNumberOfNodes())
 
-The package resides in the "C:\\Program Files\\DHI\\2024\\FEFLOW 8.1\\python" file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+The package resides in the "C:\\Program Files\\DHI\\2025\\FEFLOW 10.0\\python" file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.
 
 Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is . 
@@ -56,7 +56,7 @@ and referred to the current document instance (either FEM file or DAC file) load
 Table below shows an example about the operation differences between an external Python interpreter and the  Scripting menu. 
 The simple example just print the total number of nodes in the finite-element mesh.
 
-https://download.feflow.com/html/help81/feflow/14_References/GUI/Menus/menu_scripting.html
+https://download.feflow.com/html/help100/feflow/14_References/GUI/Menus/menu_scripting.html
 
 
 * Note: The in-built Python interpreter has standard libs only. 
