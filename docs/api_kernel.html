@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFM Kernel Methods &mdash; ifm 10.000 documentation</title>
+  <title>IFM Kernel Methods &mdash; ifm 11.000 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -45,6 +45,7 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">IFM Kernel Methods</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#ifm.ifm"><code class="docutils literal notranslate"><span class="pre">ifm</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ifm.ifm.configureLicense"><code class="docutils literal notranslate"><span class="pre">ifm.configureLicense()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ifm.ifm.enableScripting"><code class="docutils literal notranslate"><span class="pre">ifm.enableScripting()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ifm.ifm.forceLicense"><code class="docutils literal notranslate"><span class="pre">ifm.forceLicense()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ifm.ifm.getDocument"><code class="docutils literal notranslate"><span class="pre">ifm.getDocument()</span></code></a></li>
@@ -97,6 +98,38 @@
 <dt class="sig sig-object py" id="ifm.ifm">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">ifm</span></span><a class="headerlink" href="#ifm.ifm" title="Permalink to this definition"></a></dt>
 <dd><dl class="py method">
+<dt class="sig sig-object py" id="ifm.ifm.configureLicense">
+<span class="sig-name descname"><span class="pre">configureLicense</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">'config'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.configureLicense" title="Permalink to this definition"></a></dt>
+<dd><p>Configure how FEFLOW selects and uses a license.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config</strong> (<em>str</em>) – License configuration string. Supports the following options (case-insensitive):
+- demo: run FEFLOW in demo mode (max 5 slices with max 2500 nodes)
+- viewer: run FEFLOW in viewer mode (unlimited size but no write operations)
+- standard: run FEFLOW in standard mode (license defined by problem class and availability) – DEFAULT
+- engine: allocate FEFLOW_ENGINE license instead of F3…FMH3. Only available in batch and Python mode
+- F3|FM3|FH3|FMH3: standard mode but accept only selected license
+- classroom: run FEFLOW in classroom mode (max 50000 nodes when FEFLOW_CLASSROOM license found)
+- config=&lt;json_file&gt;: import a JSON configuration file
+- <a class="reference external" href="mailto:user=xxx&#37;&#52;&#48;yyy&#46;com">user=xxx<span>&#64;</span>yyy<span>&#46;</span>com</a>,passwd=ZZZ,feflow:options=FM3,advanced:options=GEODE+PYSMH”</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ifm</span><span class="o">.</span><span class="n">configureLicense</span><span class="p">(</span><span class="s1">&#39;standard&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ifm</span><span class="o">.</span><span class="n">configureLicense</span><span class="p">(</span><span class="s1">&#39;viewer&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ifm</span><span class="o">.</span><span class="n">configureLicense</span><span class="p">(</span><span class="s1">&#39;config=lic_config.json&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function is only available from FEFLOW 11</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="ifm.ifm.enableScripting">
 <span class="sig-name descname"><span class="pre">enableScripting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.ifm.enableScripting" title="Permalink to this definition"></a></dt>
 <dd><p>Enables FEFLOW internal Python scripts.</p>
@@ -119,6 +152,10 @@
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">doc</span> <span class="o">=</span> <span class="n">ifm</span><span class="o">.</span><span class="n">forceLicense</span><span class="p">(</span><span class="s2">&quot;Viewer&quot;</span><span class="p">)</span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function is only available until FEFLOW 10. From FEFLOW 11, please have a look at the function “configureLicense”.</p>
 </div>
 </dd></dl>
 
@@ -266,7 +303,7 @@ Currently, this version number corresponds with the SVN revision of the source c
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024 DHI.</p>
+    <p>&#169; Copyright 2026 DHI.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

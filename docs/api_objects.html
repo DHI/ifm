@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFM Classes &mdash; ifm 10.000 documentation</title>
+  <title>IFM Classes &mdash; ifm 11.000 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -82,6 +82,24 @@
 <li class="toctree-l4"><a class="reference internal" href="#ifm.FemMesh.isContinuous"><code class="docutils literal notranslate"><span class="pre">FemMesh.isContinuous()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ifm.FemMesh.isParabolic"><code class="docutils literal notranslate"><span class="pre">FemMesh.isParabolic()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ifm.FemMesh.isPrismatic"><code class="docutils literal notranslate"><span class="pre">FemMesh.isPrismatic()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-fractures">ifm.Fractures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ifm.Fractures"><code class="docutils literal notranslate"><span class="pre">Fractures</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.beginEdit"><code class="docutils literal notranslate"><span class="pre">Fractures.beginEdit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.createFractureGroup"><code class="docutils literal notranslate"><span class="pre">Fractures.createFractureGroup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.deleteFractureGroups"><code class="docutils literal notranslate"><span class="pre">Fractures.deleteFractureGroups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.endEdit"><code class="docutils literal notranslate"><span class="pre">Fractures.endEdit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.findFractureGroup"><code class="docutils literal notranslate"><span class="pre">Fractures.findFractureGroup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.getFractureElements"><code class="docutils literal notranslate"><span class="pre">Fractures.getFractureElements()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.getFractureLaw"><code class="docutils literal notranslate"><span class="pre">Fractures.getFractureLaw()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.getNodeType"><code class="docutils literal notranslate"><span class="pre">Fractures.getNodeType()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.getNumberOfFractureGroups"><code class="docutils literal notranslate"><span class="pre">Fractures.getNumberOfFractureGroups()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.getParamValues"><code class="docutils literal notranslate"><span class="pre">Fractures.getParamValues()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.modifyFractureGroup"><code class="docutils literal notranslate"><span class="pre">Fractures.modifyFractureGroup()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.Fractures.setParamValues"><code class="docutils literal notranslate"><span class="pre">Fractures.setParamValues()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -314,6 +332,40 @@
 <li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh.insertSlice"><code class="docutils literal notranslate"><span class="pre">SuperMesh.insertSlice()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh.removeSlice"><code class="docutils literal notranslate"><span class="pre">SuperMesh.removeSlice()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh.setOrigin"><code class="docutils literal notranslate"><span class="pre">SuperMesh.setOrigin()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ifm-supermesh3d">ifm.SuperMesh3D</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ifm.SuperMesh3D"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addBlock"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addBlock()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addHorizonPoints"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addHorizonPoints()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addMultiPoints"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addMultiPoints()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addPolyLine"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addPolyLine()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addRegionMarkers"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addRegionMarkers()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.addSurface"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.addSurface()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.beginEdit"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.beginEdit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.clearAll"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.clearAll()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.deleteObjects"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.deleteObjects()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.endEdit"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.endEdit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.generateMesh"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.generateMesh()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getCoor"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getCoor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getCoors"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getCoors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getExtent"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getExtent()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getGeoCoordinateSystem"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getGeoCoordinateSystem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getMeshGenerator"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getMeshGenerator()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getNumberOfLineAddins"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getNumberOfLineAddins()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getNumberOfNodes"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getNumberOfNodes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getNumberOfPointAddins"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getNumberOfPointAddins()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getNumberOfSurfaces"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getNumberOfSurfaces()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getNumberOfTriangles"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getNumberOfTriangles()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getOrigin"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getOrigin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getProcessingTool"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getProcessingTool()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getTriangle"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getTriangle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.getTriangleInfo"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.getTriangleInfo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.processSupermesh"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.processSupermesh()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.setGeoCoordinateSystem"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.setGeoCoordinateSystem()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ifm.SuperMesh3D.setOrigin"><code class="docutils literal notranslate"><span class="pre">SuperMesh3D.setOrigin()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -789,6 +841,268 @@ Physical unit is [m]</p>
 <dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="ifm-fractures">
+<h2>ifm.Fractures<a class="headerlink" href="#ifm-fractures" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.Fractures">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">Fractures</span></span><a class="headerlink" href="#ifm.Fractures" title="Permalink to this definition"></a></dt>
+<dd><p>The FractureDoc class provides access to fracture-related functionality
+of a FEFLOW model. It allows managing fracture groups, assigning fracture
+elements, and setting or querying fracture parameters.</p>
+<p>Editing operations on fractures must be bracketed by beginEdit() and
+endEdit().</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.beginEdit">
+<span class="sig-name descname"><span class="pre">beginEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.beginEdit" title="Permalink to this definition"></a></dt>
+<dd><p>Begin an edit session for fracture data.</p>
+<p>This function must be called before creating, modifying, or deleting
+fracture groups or fracture elements.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.endEdit" title="ifm.Fractures.endEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endEdit</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.createFractureGroup">
+<span class="sig-name descname"><span class="pre">createFractureGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selection_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">law</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">node_type</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.createFractureGroup" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new fracture group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Name of the fracture group. Must be unique.</p></li>
+<li><p><strong>indices</strong> (<em>list</em><em> of </em><em>int</em>) – List of Edges/Faces indices used to define the group.</p></li>
+<li><p><strong>selection_type</strong> (<em>int</em>) – Selection type used to interpret indices.
+One of:
+{ifm.Enum.SEL_FACES, ifm.Enum.SEL_EDGES}</p></li>
+<li><p><strong>law</strong> (<em>int</em>) – Fracture flow law.
+One of:
+{ifm.Enum.DARCY_LAW, ifm.Enum.HP_LAW, ifm.Enum.MANNING_LAW}</p></li>
+<li><p><strong>node_type</strong> (<em>int</em><em>, </em><em>optional</em>) – Fracture node type.
+One of:
+{ifm.Enum.FRAC_COMMON_NODE_TYPE, ifm.Enum.FRAC_DUAL_NODE_TYPE}</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ID of the newly created fracture group, or -1 if creation failed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.modifyFractureGroup" title="ifm.Fractures.modifyFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modifyFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.deleteFractureGroups" title="ifm.Fractures.deleteFractureGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteFractureGroups</span></code></a>, <a class="reference internal" href="#ifm.Fractures.getFractureElements" title="ifm.Fractures.getFractureElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFractureElements</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.deleteFractureGroups">
+<span class="sig-name descname"><span class="pre">deleteFractureGroups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.deleteFractureGroups" title="Permalink to this definition"></a></dt>
+<dd><p>Delete fracture groups by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>indices</strong> (<em>list</em><em> of </em><em>int</em>) – List of fracture group IDs to be deleted.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.getNumberOfFractureGroups" title="ifm.Fractures.getNumberOfFractureGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNumberOfFractureGroups</span></code></a>, <a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.endEdit">
+<span class="sig-name descname"><span class="pre">endEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.endEdit" title="Permalink to this definition"></a></dt>
+<dd><p>End an edit session for fracture data.</p>
+<p>This function finalizes all changes performed since beginEdit() was
+called.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.beginEdit" title="ifm.Fractures.beginEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beginEdit</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.findFractureGroup">
+<span class="sig-name descname"><span class="pre">findFractureGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.findFractureGroup" title="Permalink to this definition"></a></dt>
+<dd><p>Find the ID of a fracture group by its name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Name of the fracture group.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>ID of the fracture group, or -1 if not found.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.getNumberOfFractureGroups" title="ifm.Fractures.getNumberOfFractureGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNumberOfFractureGroups</span></code></a>, <a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.getFractureElements">
+<span class="sig-name descname"><span class="pre">getFractureElements</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">group</span> <span class="pre">|</span> <span class="pre">name</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.getFractureElements" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve fracture elements belonging to a fracture group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group</strong> (<em>int</em><em>, </em><em>optional</em>) – Fracture group ID.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Fracture group name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of fracture element indices belonging to the group.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.modifyFractureGroup" title="ifm.Fractures.modifyFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modifyFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.deleteFractureGroups" title="ifm.Fractures.deleteFractureGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteFractureGroups</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.getFractureLaw">
+<span class="sig-name descname"><span class="pre">getFractureLaw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.getFractureLaw" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the flow law assigned to a fracture group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>group</strong> (<em>int</em>) – Fracture group ID.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Fracture flow law.
+One of:
+{ifm.Enum.DARCY_LAW, ifm.Enum.HP_LAW, ifm.Enum.MANNING_LAW}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setFracLaw</span></code>, <a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.getNodeType">
+<span class="sig-name descname"><span class="pre">getNodeType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.getNodeType" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the node type used by a fracture group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>group</strong> (<em>int</em>) – Fracture group ID.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Fracture node type.
+One of:
+{ifm.Enum.FRAC_COMMON_NODE_TYPE, ifm.Enum.FRAC_DUAL_NODE_TYPE}</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.getNumberOfFractureGroups">
+<span class="sig-name descname"><span class="pre">getNumberOfFractureGroups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.getNumberOfFractureGroups" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the number of existing fracture groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Number of fracture groups.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.findFractureGroup" title="ifm.Fractures.findFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">findFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.deleteFractureGroups" title="ifm.Fractures.deleteFractureGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteFractureGroups</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.getParamValues">
+<span class="sig-name descname"><span class="pre">getParamValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">id</span> <span class="pre">|</span> <span class="pre">name</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.getParamValues" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve parameter values for fracture elements or groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> (<em>IfmParameter</em>) – Parameter identification.</p></li>
+<li><p><strong>id</strong> (<em>int</em><em>, </em><em>optional</em>) – Fracture group ID.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Fracture group name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Parameter values.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of float</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.setParamValues" title="ifm.Fractures.setParamValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setParamValues</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.modifyFractureGroup">
+<span class="sig-name descname"><span class="pre">modifyFractureGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selection_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.modifyFractureGroup" title="Permalink to this definition"></a></dt>
+<dd><p>Modify the content of an existing fracture group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>group_id</strong> (<em>int</em>) – ID of the fracture group.</p></li>
+<li><p><strong>indices</strong> (<em>list</em><em> of </em><em>int</em>) – Indices to be processed.</p></li>
+<li><p><strong>selection_type</strong> (<em>int</em>) – Selection type used to interpret indices.</p></li>
+<li><p><strong>operation</strong> (<em>int</em>) – Modification operation.
+One of:
+{ifm.Enum.SOP_SET, ifm.Enum.UNION, ifm.Enum.INTERSECT, ifm.Enum.SUBTRACT}</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.createFractureGroup" title="ifm.Fractures.createFractureGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">createFractureGroup</span></code></a>, <a class="reference internal" href="#ifm.Fractures.getFractureElements" title="ifm.Fractures.getFractureElements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFractureElements</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.Fractures.setParamValues">
+<span class="sig-name descname"><span class="pre">setParamValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span> <span class="pre">|</span> <span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">indices</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.Fractures.setParamValues" title="Permalink to this definition"></a></dt>
+<dd><p>Set parameter values for fracture elements or fracture groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> (<em>IfmParameter</em>) – Parameter identification.</p></li>
+<li><p><strong>id</strong> (<em>int</em><em>, </em><em>optional</em>) – Fracture group ID.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Fracture group name.</p></li>
+<li><p><strong>values</strong> (<em>list</em><em> of </em><em>float</em>) – Parameter values to be assigned.</p></li>
+<li><p><strong>indices</strong> (<em>list</em><em> of </em><em>int</em><em>, </em><em>optional</em>) – Optional list of fracture element indices.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.Fractures.getParamValues" title="ifm.Fractures.getParamValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getParamValues</span></code></a></p>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -3486,6 +3800,513 @@ was created by calling <cite>ifm.FeflowDoc.budgetComputeSubdomainTransfer</cite>
 </dd></dl>
 
 </section>
+<section id="ifm-supermesh3d">
+<h2>ifm.SuperMesh3D<a class="headerlink" href="#ifm-supermesh3d" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ifm.</span></span><span class="sig-name descname"><span class="pre">SuperMesh3D</span></span><a class="headerlink" href="#ifm.SuperMesh3D" title="Permalink to this definition"></a></dt>
+<dd><p>The SuperMesh3D class documents the generation and processing functions of 3D Supermesh in FEFLOW.
+It provides access to mesh generators, processing tools, and the supermesh
+processing workflow.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addBlock">
+<span class="sig-name descname"><span class="pre">addBlock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addBlock" title="Permalink to this definition"></a></dt>
+<dd><p>Add a block object to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>block</strong> (<em>object</em>) – Block object to be added.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration for the block.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created supermesh object (block).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addHorizonPoints">
+<span class="sig-name descname"><span class="pre">addHorizonPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addHorizonPoints" title="Permalink to this definition"></a></dt>
+<dd><p>Add horizon points to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>object</em>) – Horizon points object or coordinate collection.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created horizon points object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addMultiPoints">
+<span class="sig-name descname"><span class="pre">addMultiPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addMultiPoints" title="Permalink to this definition"></a></dt>
+<dd><p>Add multiple point objects to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>object</em>) – Multipoint object or coordinate collection.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created multipoints object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addPolyLine">
+<span class="sig-name descname"><span class="pre">addPolyLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">polyline</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addPolyLine" title="Permalink to this definition"></a></dt>
+<dd><p>Add a polyline to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>polyline</strong> (<em>object</em>) – Polyline geometry to be added.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created polyline object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addRegionMarkers">
+<span class="sig-name descname"><span class="pre">addRegionMarkers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">markers</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addRegionMarkers" title="Permalink to this definition"></a></dt>
+<dd><p>Add region markers to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>markers</strong> (<em>object</em>) – Region marker definitions or geometry.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created region markers object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.addSurface">
+<span class="sig-name descname"><span class="pre">addSurface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surface</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.addSurface" title="Permalink to this definition"></a></dt>
+<dd><p>Add a surface to the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>object</em>) – Surface geometry to be added.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The created surface object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Smh3dObject</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.beginEdit">
+<span class="sig-name descname"><span class="pre">beginEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.beginEdit" title="Permalink to this definition"></a></dt>
+<dd><p>Begin an edit session on the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.clearAll">
+<span class="sig-name descname"><span class="pre">clearAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.clearAll" title="Permalink to this definition"></a></dt>
+<dd><p>Clear all objects from the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.deleteObjects">
+<span class="sig-name descname"><span class="pre">deleteObjects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objectIds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.deleteObjects" title="Permalink to this definition"></a></dt>
+<dd><p>Delete objects from the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>objectIds</strong> (<em>list</em><em>[</em><em>int</em><em>] or </em><em>list</em><em>[</em><em>Smh3dObject</em><em>]</em>) – Identifiers or object references to be deleted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Number of objects deleted.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.endEdit">
+<span class="sig-name descname"><span class="pre">endEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.endEdit" title="Permalink to this definition"></a></dt>
+<dd><p>End the current edit session and finalize changes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.generateMesh">
+<span class="sig-name descname"><span class="pre">generateMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">meshGen</span> <span class="pre">[,</span> <span class="pre">properties]</span> <span class="pre">[,</span> <span class="pre">selection]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.generateMesh" title="Permalink to this definition"></a></dt>
+<dd><p>Generate a mesh from the current supermesh using a given mesh generator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>meshGen</strong> (<em>MeshGen</em>) – Mesh generator instance.</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties/configuration for mesh generation.</p></li>
+<li><p><strong>selection</strong> (<em>list</em><em>[</em><em>Smh3dObject</em><em>]</em><em>, </em><em>optional</em>) – Optional selection of objects to restrict generation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.SuperMesh3D.getMeshGenerator" title="ifm.SuperMesh3D.getMeshGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshGenerator</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshGenerators</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getCoor">
+<span class="sig-name descname"><span class="pre">getCoor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getCoor" title="Permalink to this definition"></a></dt>
+<dd><p>Get the coordinate of a single node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nodeId</strong> (<em>int</em>) – Node identifier.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>(x, y, z) coordinate of the node.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[float, float, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getCoors">
+<span class="sig-name descname"><span class="pre">getCoors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodeIds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getCoors" title="Permalink to this definition"></a></dt>
+<dd><p>Get coordinates of multiple nodes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nodeIds</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – Node identifiers.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of (x, y, z) coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[tuple[float, float, float]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getExtent">
+<span class="sig-name descname"><span class="pre">getExtent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getExtent" title="Permalink to this definition"></a></dt>
+<dd><p>Get the spatial extent (bounding box) of the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(minX, minY, minZ, maxX, maxY, maxZ)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple[float, float, float, float, float, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getGeoCoordinateSystem">
+<span class="sig-name descname"><span class="pre">getGeoCoordinateSystem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getGeoCoordinateSystem" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the current geographic coordinate system (CRS) of the supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Coordinate reference system or descriptor.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getMeshGenerator">
+<span class="sig-name descname"><span class="pre">getMeshGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">femType</span> <span class="pre">=</span> <span class="pre">SMH_FEMTYPE_UNSTRUCTURED</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getMeshGenerator" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve a mesh generator instance by its ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>int</em>) – Identifier of the mesh generator.
+One of:
+{ifm.Enum.SMH_GEN_GEODE, ifm.Enum.SMH_GEN_TETGEN}</p></li>
+<li><p><strong>femType</strong> (<em>int</em><em>, </em><em>optional</em>) – FEM type for the mesh generator.
+One of:
+{ifm.Enum.SMH_FEMTYPE_UNSTRUCTURED, ifm.Enum.SMH_FEMTYPE_LAYERED}</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The mesh generator instance corresponding to the given ID. SMH_FEMTYPE_LAYERED is only available for Geode mesh generator.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MeshGen</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.SuperMesh3D.getProcessingTool" title="ifm.SuperMesh3D.getProcessingTool"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProcessingTool</span></code></a>, <a class="reference internal" href="#ifm.SuperMesh3D.processSupermesh" title="ifm.SuperMesh3D.processSupermesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processSupermesh</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getNumberOfLineAddins">
+<span class="sig-name descname"><span class="pre">getNumberOfLineAddins</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getNumberOfLineAddins" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of line add-ins in the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Count of line add-ins.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getNumberOfNodes">
+<span class="sig-name descname"><span class="pre">getNumberOfNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getNumberOfNodes" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of nodes in the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node count.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getNumberOfPointAddins">
+<span class="sig-name descname"><span class="pre">getNumberOfPointAddins</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getNumberOfPointAddins" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of point add-ins in the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Count of point add-ins.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getNumberOfSurfaces">
+<span class="sig-name descname"><span class="pre">getNumberOfSurfaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getNumberOfSurfaces" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of surfaces in the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Surface count.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getNumberOfTriangles">
+<span class="sig-name descname"><span class="pre">getNumberOfTriangles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getNumberOfTriangles" title="Permalink to this definition"></a></dt>
+<dd><p>Get the number of triangles in the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Triangle count.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getOrigin">
+<span class="sig-name descname"><span class="pre">getOrigin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getOrigin" title="Permalink to this definition"></a></dt>
+<dd><p>Get the origin of the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(x0, y0, z0) origin coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple[float, float, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getProcessingTool">
+<span class="sig-name descname"><span class="pre">getProcessingTool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getProcessingTool" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve a processing tool by its ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>int</em>) – Identifier of the processing tool: ifm.Enum.SMH_TOOL_GEODE</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The processing tool corresponding to the given ID.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ProcTool</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.SuperMesh3D.processSupermesh" title="ifm.SuperMesh3D.processSupermesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processSupermesh</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getTriangle">
+<span class="sig-name descname"><span class="pre">getTriangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getTriangle" title="Permalink to this definition"></a></dt>
+<dd><p>Get a triangle by its identifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>triId</strong> (<em>int</em>) – Triangle identifier.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Node indices forming the triangle.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[int, int, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.getTriangleInfo">
+<span class="sig-name descname"><span class="pre">getTriangleInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">triId</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.getTriangleInfo" title="Permalink to this definition"></a></dt>
+<dd><p>Get detailed information for a triangle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>triId</strong> (<em>int</em>) – Triangle identifier.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Triangle coordinates in form ((x1,y1,z1),(x2,y2,z2),(x3,y3,z3)).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double(3)(3)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.processSupermesh">
+<span class="sig-name descname"><span class="pre">processSupermesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">procTool,</span> <span class="pre">geodeOp</span> <span class="pre">[,</span> <span class="pre">properties]</span> <span class="pre">[,</span> <span class="pre">selection]</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.processSupermesh" title="Permalink to this definition"></a></dt>
+<dd><p>Process the current supermesh using a selected processing tool and
+geometric operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>procTool</strong> (<em>ProcessingTool</em>) – Processing tool instance to be applied, obtained with function “getProcessingTool”.</p></li>
+<li><p><strong>geodeOp</strong> (<em>int</em>) – Geometric/processing operation to be executed by the tool.
+One of:
+{ifm.Enum.SMH_GEODEOP_COMPUTE_INTERSECTIONS, ifm.Enum.SMH_GEODEOP_GENERATE_IMPLICIT_SURFACES,
+ifm.Enum.SMH_GEODEOP_INDIVIDUALIZE, ifm.Enum.SMH_GEODEOP_REMOVE_OUTSIDE, ifm.Enum.SMH_GEODEOP_REMOVE_SMALL,
+ifm.Enum.SMH_GEODEOP_REPAIR_SURFACES, ifm.Enum.SMH_GEODEOP_RESET_IMPLICIT_RESULTS,
+ifm.Enum.SMH_GEODEOP_RESET_TOPOLOGY, ifm.Enum.SMH_GEODEOP_RETRIANGULATE_SURFACES}</p></li>
+<li><p><strong>properties</strong> (<em>object</em><em>, </em><em>optional</em>) – Optional properties or configuration object for the operation.</p></li>
+<li><p><strong>selection</strong> (<em>list</em><em> of </em><em>Smh3dObject</em><em>, </em><em>optional</em>) – Optional selection of SMH3D objects to restrict processing.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#ifm.SuperMesh3D.getProcessingTool" title="ifm.SuperMesh3D.getProcessingTool"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProcessingTool</span></code></a>, <a class="reference internal" href="#ifm.SuperMesh3D.getMeshGenerator" title="ifm.SuperMesh3D.getMeshGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMeshGenerator</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">.</span><span class="n">processSupermesh</span><span class="p">(</span><span class="n">tool</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">SMH_GEODEOP_RETRIANGULATE_SURFACES</span><span class="p">,</span> <span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;Preserve original vertices&#39;</span> <span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;Sharp angle&#39;</span> <span class="p">:</span> <span class="s1">&#39;165.5 [DEG]&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="s1">&#39;Global edge size&#39;</span> <span class="p">:</span> <span class="s1">&#39;5 [m]&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="p">})</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.setGeoCoordinateSystem">
+<span class="sig-name descname"><span class="pre">setGeoCoordinateSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.setGeoCoordinateSystem" title="Permalink to this definition"></a></dt>
+<dd><p>Set the geographic coordinate system (CRS) for the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>crs</strong> (<em>object</em>) – Coordinate reference system or descriptor.
+One of:
+{ifm.Enum.CS_AUTHSTR, ifm.Enum.CS_CRSWKT, ifm.Enum.CS_JSON,
+ifm.Enum.CS_PRJFILE,ifm.Enum.CS_PROJ,ifm.Enum.CS_WGEO}</p></li>
+<li><p><strong>cs_name</strong> (<em>string</em>) – Name of coordinate system</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">smh</span><span class="o">..</span><span class="n">setGeoCoordinateSystem</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">CS_WGEO</span><span class="p">,</span> <span class="s1">&#39;TRANS3D.21103&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ifm.SuperMesh3D.setOrigin">
+<span class="sig-name descname"><span class="pre">setOrigin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ifm.SuperMesh3D.setOrigin" title="Permalink to this definition"></a></dt>
+<dd><p>Set the origin of the current supermesh.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>origin</strong> (<em>tuple</em><em>[</em><em>float</em><em>, </em><em>float</em><em>, </em><em>float</em><em>]</em>) – (x0, y0, z0) origin coordinate.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 <section id="ifm-wellmanager">
 <h2>ifm.WellManager<a class="headerlink" href="#ifm-wellmanager" title="Permalink to this heading"></a></h2>
 <dl class="py class">
@@ -3809,7 +4630,7 @@ including including additional sub-types if set (<cite>ifm.Enum.WMT_MASS_TRANSPO
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024 DHI.</p>
+    <p>&#169; Copyright 2026 DHI.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

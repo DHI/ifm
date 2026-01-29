@@ -11,8 +11,8 @@ Programming Interface for the FEFLOW Grundwater Modelling System
 Requirements
 ------------
 
-* Python >= 3.9
-* FEFLOW 10.0
+* Python >= 3.11
+* FEFLOW 11.0
 
 Installation
 ------------
@@ -36,7 +36,7 @@ The most common way is to import ifm as a package in a Python script. This is us
     >>>  doc = ifm.loadDocument("myModel.fem")
     >>>  print(doc.getNumberOfNodes())
 
-The package resides in the "C:\\Program Files\\DHI\\2025\\FEFLOW 10.0\\python" file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
+The package resides in the "C:\\Program Files\\DHI\\2026\\FEFLOW 11.0\\python" file and the FEFLOW installer will add this path to the PYTHONPATH environment variable.
 Therefore, the example above should work out of the box.
 
 Note that if multiple versions of FEFLOW are installed, you need to adjust the PYTHONPATH environment variable accordingly thus that the desired FEFLOW version is . 

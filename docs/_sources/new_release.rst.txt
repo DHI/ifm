@@ -3,6 +3,10 @@
 New Features / Version History
 ==============================
 
+New API features in FEFLOW 11.0
+-------------------------------
+* 
+
 New API features in FEFLOW 10.0
 -------------------------------
 * Access to new 3D Supermesh data structure

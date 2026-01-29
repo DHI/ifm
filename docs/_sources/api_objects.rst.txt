@@ -16,6 +16,11 @@ ifm.FemMesh
 .. autoclass:: ifm.FemMesh
 	:members:
 
+ifm.Fractures
+---------------
+.. autoclass:: ifm.Fractures
+	:members:
+
 ifm.LookupTable
 ---------------
 .. autoclass:: ifm.LookupTable
@@ -59,6 +64,11 @@ ifm.SubdomainTransferBudget
 ifm.SuperMesh
 ---------------------------
 .. autoclass:: ifm.SuperMesh
+	:members:	
+	
+ifm.SuperMesh3D
+---------------------------
+.. autoclass:: ifm.SuperMesh3D
 	:members:	
 	
 ifm.WellManager
