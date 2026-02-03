@@ -5,7 +5,10 @@ New Features / Version History
 
 New API features in FEFLOW 11.0
 -------------------------------
-* 
+* Further access to 3D Supermesh: mesh generators for unstructured meshes, processing tools
+* New Fracture class to access Discrete Features groups and modify their properties
+* New Python API to configure license for FEFLOW 11 
+ 
 
 New API features in FEFLOW 10.0
 -------------------------------
