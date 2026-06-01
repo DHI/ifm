@@ -103,13 +103,17 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.addAgeSpecies">addAgeSpecies() (ifm.FeflowDoc method)</a>
 </li>
-      <li><a href="api_objects.html#ifm.SuperMesh3D.addBlock">addBlock() (ifm.SuperMesh3D method)</a>
-</li>
       <li><a href="api_objects.html#ifm.SuperMesh.addElement">addElement() (ifm.SuperMesh method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.addFault">addFault() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_objects.html#ifm.SuperMesh3D.addHorizonPoints">addHorizonPoints() (ifm.SuperMesh3D method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.addHorizonPointsList">addHorizonPointsList() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_objects.html#ifm.LookupTable.addMaterial">addMaterial() (ifm.LookupTable method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.addModelBoundary">addModelBoundary() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_objects.html#ifm.SuperMesh3D.addMultiPoints">addMultiPoints() (ifm.SuperMesh3D method)</a>
 </li>
@@ -123,7 +127,11 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.addSpecies">addSpecies() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.addStratigraphicUnitEx">addStratigraphicUnitEx() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_objects.html#ifm.SuperMesh3D.addSurface">addSurface() (ifm.SuperMesh3D method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.addSurfaces">addSurfaces() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.allowNodeMovement">allowNodeMovement() (ifm.FeflowDoc method)</a>
 </li>
@@ -254,6 +262,8 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.deleteSelection">deleteSelection() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.deleteSteps">deleteSteps() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.deleteStratigraphicUnitEx">deleteStratigraphicUnitEx() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_objects.html#ifm.WellManager.deleteWell">deleteWell() (ifm.WellManager method)</a>
 </li>
@@ -424,6 +434,8 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getBHEReferenceNode">getBHEReferenceNode() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getBHEType">getBHEType() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.getBlocks">getBlocks() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_objects.html#ifm.NodalBudget.getBorderIn">getBorderIn() (ifm.NodalBudget method)</a>
 
@@ -687,10 +699,16 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getHistoryValues">getHistoryValues() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.getHorizonPointsList">getHorizonPointsList() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_objects.html#ifm.ProblemDefinition.getHysteresisFlag">getHysteresisFlag() (ifm.ProblemDefinition method)</a>
 </li>
       <li><a href="api_objects.html#ifm.MLWInfo.getId">getId() (ifm.MLWInfo method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh3D.getId">(ifm.SuperMesh3D method)</a>
 </li>
+      </ul></li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getInitialSimulationTime">getInitialSimulationTime() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.ParticleTracer.getInitialTime">getInitialTime() (ifm.ParticleTracer method)</a>
@@ -897,14 +915,14 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMaximumNumberOfGroups">getMaximumNumberOfGroups() (ifm.FeflowDoc method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_objects.html#ifm.SuperMesh.getMeshGenerator">getMeshGenerator() (ifm.SuperMesh method)</a>
 
       <ul>
         <li><a href="api_objects.html#ifm.SuperMesh3D.getMeshGenerator">(ifm.SuperMesh3D method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_objects.html#ifm.SuperMesh.getMeshGenerators">getMeshGenerators() (ifm.SuperMesh method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getMeshType">getMeshType() (ifm.FeflowDoc method)</a>
@@ -924,7 +942,11 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getMultiSpeciesId">getMultiSpeciesId() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.MLWInfo.getName">getName() (ifm.MLWInfo method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh3D.getName">(ifm.SuperMesh3D method)</a>
 </li>
+      </ul></li>
       <li><a href="api_objects.html#ifm.NodalBudget.getNetIn">getNetIn() (ifm.NodalBudget method)</a>
 
       <ul>
@@ -1121,6 +1143,10 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getNumberOfValidObsPoints">getNumberOfValidObsPoints() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.getObjectsByName">getObjectsByName() (ifm.SuperMesh3D method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.getObjectsOfType">getObjectsOfType() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getObsLabel">getObsLabel() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_objects.html#ifm.FemMesh.getOrigin">getOrigin() (ifm.FemMesh method)</a>
@@ -1212,6 +1238,8 @@
       <li><a href="api_objects.html#ifm.LookupTable.getPropertyValue">getPropertyValue() (ifm.LookupTable method)</a>
 
       <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh3D.getPropertyValue">(ifm.SuperMesh3D method)</a>
+</li>
         <li><a href="api_objects.html#ifm.WellManager.getPropertyValue">(ifm.WellManager method)</a>
 </li>
       </ul></li>
@@ -1374,6 +1402,8 @@
       <li><a href="api_doc.html#ifm.FeflowDoc.getSuperMesh">getSuperMesh() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.getSuperMesh3D">getSuperMesh3D() (ifm.FeflowDoc method)</a>
+</li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.getSurfaces">getSurfaces() (ifm.SuperMesh3D method)</a>
 </li>
       <li><a href="api_callbacks.html#ifm.callbacks.getTensor">getTensor() (ifm.callbacks method)</a>
 </li>
@@ -1713,6 +1743,8 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.releaseParameter">releaseParameter() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.removeHorizonPointsList">removeHorizonPointsList() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_objects.html#ifm.LookupTable.removeMaterial">removeMaterial() (ifm.LookupTable method)</a>
 </li>
   </ul></td>
@@ -2001,10 +2033,10 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setMatHeatTransferOut">setMatHeatTransferOut() (ifm.FeflowDoc method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.setMatMassAnglePitch">setMatMassAnglePitch() (ifm.FeflowDoc method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api_doc.html#ifm.FeflowDoc.setMatMassAngleYaw">setMatMassAngleYaw() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setMatMassAquiferThickness">setMatMassAquiferThickness() (ifm.FeflowDoc method)</a>
@@ -2083,6 +2115,8 @@
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setMultiSpeciesId">setMultiSpeciesId() (ifm.FeflowDoc method)</a>
 </li>
+      <li><a href="api_objects.html#ifm.SuperMesh3D.setName">setName() (ifm.SuperMesh3D method)</a>
+</li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setNodalRefDistrValue">setNodalRefDistrValue() (ifm.FeflowDoc method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setNodalRefDistrValues">setNodalRefDistrValues() (ifm.FeflowDoc method)</a>
@@ -2132,7 +2166,11 @@
       <li><a href="api_objects.html#ifm.ProblemDefinition.setProjection2D">setProjection2D() (ifm.ProblemDefinition method)</a>
 </li>
       <li><a href="api_objects.html#ifm.LookupTable.setPropertyValue">setPropertyValue() (ifm.LookupTable method)</a>
+
+      <ul>
+        <li><a href="api_objects.html#ifm.SuperMesh3D.setPropertyValue">(ifm.SuperMesh3D method)</a>
 </li>
+      </ul></li>
       <li><a href="api_objects.html#ifm.ParticleTracer.setRandomWalkMethod">setRandomWalkMethod() (ifm.ParticleTracer method)</a>
 </li>
       <li><a href="api_doc.html#ifm.FeflowDoc.setReferenceTime">setReferenceTime() (ifm.FeflowDoc method)</a>
